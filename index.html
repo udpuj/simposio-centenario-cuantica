@@ -17,6 +17,11 @@
         <img src="images/distrital.png" alt="Universidad Distrital Francisco José de Caldas" class="header-logo">
         <img src="images/javeriana.png" alt="Pontificia Universidad Javeriana" class="header-logo">
       </div>
+      <div class="lang-toggle">
+        <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-code">ES</span>
+        </button>
+      </div>
     </div>
     <nav>
       <div class="nav-brand">
@@ -24,13 +29,13 @@
       </div>
       <div class="nav-menu" id="nav-menu">
         <ul>
-          <li><a href="acerca.html">Acerca del Simposio</a></li>
-          <li><a href="invitados.html">Invitados</a></li>
-          <li><a href="programa.html">Programa</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="lugar.html">Lugar</a></li>
-          <li><a href="comite.html">Comité</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="acerca.html" data-i18n="nav.about">Acerca del Simposio</a></li>
+          <li><a href="invitados.html" data-i18n="nav.guests">Invitados</a></li>
+          <li><a href="programa.html" data-i18n="nav.program">Programa</a></li>
+          <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
+          <li><a href="lugar.html" data-i18n="nav.location">Lugar</a></li>
+          <li><a href="comite.html" data-i18n="nav.committee">Comité</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </div>
       <div class="nav-toggle" id="nav-toggle">
@@ -43,51 +48,51 @@
 
   <main>
     <section>
-      <h1>La Mecánica Cuántica en su Centenario: Un corto paseo por sus inicios y su presente</h1>
-      <p>Explora los avances más recientes en física cuántica con expertos de talla internacional.</p>
+      <h1 data-i18n="home.hero.title">La Mecánica Cuántica en su Centenario: Un corto paseo por sus inicios y su presente</h1>
+      <p data-i18n="home.hero.subtitle">Explora los avances más recientes en física cuántica con expertos de talla internacional.</p>
       <div class="cta">
-        <a class="btn btn--primary" href="registro.html">Regístrate ahora</a>
-        <a class="btn btn--outline" href="programa.html">Ver programa</a>
+        <a class="btn btn--primary" href="registro.html" data-i18n="home.hero.register">Regístrate ahora</a>
+        <a class="btn btn--outline" href="programa.html" data-i18n="home.hero.program">Ver programa</a>
       </div>      
     </section>
 
     <section style="margin-top: 4rem;">
-      <h2>Acerca del Simposio</h2>
-      <p>Este evento reúne a estudiantes, investigadores y expertos en temas como computación cuántica, metrología y relatividad.</p>
-      <p><strong>Organizan:</strong> Pontificia Universidad Javeriana y Universidad Distrital Francisco José de Caldas.</p>
+      <h2 data-i18n="home.about.title">Acerca del Simposio</h2>
+      <p data-i18n="home.about.text">Este evento reúne a estudiantes, investigadores y expertos en temas como computación cuántica, metrología y relatividad.</p>
+      <p><strong data-i18n="home.about.organize">Organizan:</strong> Pontificia Universidad Javeriana y Universidad Distrital Francisco José de Caldas.</p>
       <div style="margin-top: 1.5rem;">
-        <a class="btn btn--outline" href="acerca.html">Más información</a>
+        <a class="btn btn--outline" href="acerca.html" data-i18n="home.about.more">Más información</a>
       </div>
     </section>
 
     <section style="margin-top: 4rem;">
-      <h2>Invitados</h2>
-      <p>Conoce a nuestros ponentes especialistas en física cuántica.</p>
+      <h2 data-i18n="home.guests.title">Invitados</h2>
+      <p data-i18n="home.guests.text">Conoce a nuestros ponentes especialistas en física cuántica.</p>
       <div style="margin-top: 1.5rem;">
-        <a class="btn btn--outline" href="invitados.html">Ver todos los invitados</a>
+        <a class="btn btn--outline" href="invitados.html" data-i18n="home.guests.view">Ver todos los invitados</a>
       </div>
     </section>
 
     <section style="margin-top: 4rem;">
-      <h2>Programa del Evento</h2>
-      <p>Dos días de conferencias magistrales, presentaciones y networking.</p>
+      <h2 data-i18n="home.program.title">Programa del Evento</h2>
+      <p data-i18n="home.program.text">Dos días de conferencias magistrales, presentaciones y networking.</p>
       <div style="margin-top: 1.5rem;">
-        <a class="btn btn--outline" href="programa.html">Ver programa completo</a>
+        <a class="btn btn--outline" href="programa.html" data-i18n="home.program.view">Ver programa completo</a>
       </div>
     </section>
 
     <section style="margin-top: 4rem;">
-      <h2>Participa en el Simposio</h2>
+      <h2 data-i18n="home.participate.title">Participa en el Simposio</h2>
       <div class="grid grid-3" style="margin-top:1.5rem;">
         <div class="card">
-          <h3>Registro</h3>
-          <p>Únete al simposio de forma gratuita. El formulario ya está disponible.</p>
-          <a class="btn btn--primary btn--sm" href="registro.html">Más información</a>
+          <h3 data-i18n="home.participate.registration.title">Registro</h3>
+          <p data-i18n="home.participate.registration.text">Únete al simposio de forma gratuita. El formulario ya está disponible.</p>
+          <a class="btn btn--primary btn--sm" href="registro.html" data-i18n="home.participate.registration.more">Más información</a>
         </div>
         <div class="card">
-          <h3>Ubicación</h3>
-          <p>El simposio se realizará en dos ubicaciones: Universidad Distrital (mañana) y Pontificia Universidad Javeriana (tarde). Consulta la ubicación exacta y cómo llegar.</p>
-          <a class="btn btn--primary btn--sm" href="lugar.html">Ver ubicación</a>
+          <h3 data-i18n="home.participate.location.title">Ubicación</h3>
+          <p data-i18n="home.participate.location.text">El simposio se realizará en dos ubicaciones: Universidad Distrital (mañana) y Pontificia Universidad Javeriana (tarde). Consulta la ubicación exacta y cómo llegar.</p>
+          <a class="btn btn--primary btn--sm" href="lugar.html" data-i18n="home.participate.location.view">Ver ubicación</a>
         </div>
       </div>
     </section>
@@ -96,10 +101,120 @@
   <footer>
     <hr style="border:none; border-top:1px solid #1d2745; margin-bottom:1rem;">
     <p>© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas</p>
-    <p>Desarrollado por el Comité de Organización</p>
+    <p data-i18n="footer.developed">Desarrollado por el Comité de Organización</p>
   </footer>
 
   <script>
+    // Language translations
+    const translations = {
+      es: {
+        'nav.about': 'Acerca del Simposio',
+        'nav.guests': 'Invitados',
+        'nav.program': 'Programa',
+        'nav.register': 'Registro',
+        'nav.location': 'Lugar',
+        'nav.committee': 'Comité',
+        'nav.contact': 'Contacto',
+        'home.hero.title': 'La Mecánica Cuántica en su Centenario: Un corto paseo por sus inicios y su presente',
+        'home.hero.subtitle': 'Explora los avances más recientes en física cuántica con expertos de talla internacional.',
+        'home.hero.register': 'Regístrate ahora',
+        'home.hero.program': 'Ver programa',
+        'home.about.title': 'Acerca del Simposio',
+        'home.about.text': 'Este evento reúne a estudiantes, investigadores y expertos en temas como computación cuántica, metrología y relatividad.',
+        'home.about.organize': 'Organizan:',
+        'home.about.more': 'Más información',
+        'home.guests.title': 'Invitados',
+        'home.guests.text': 'Conoce a nuestros ponentes especialistas en física cuántica.',
+        'home.guests.view': 'Ver todos los invitados',
+        'home.program.title': 'Programa del Evento',
+        'home.program.text': 'Dos días de conferencias magistrales, presentaciones y networking.',
+        'home.program.view': 'Ver programa completo',
+        'home.participate.title': 'Participa en el Simposio',
+        'home.participate.registration.title': 'Registro',
+        'home.participate.registration.text': 'Únete al simposio de forma gratuita. El formulario ya está disponible.',
+        'home.participate.registration.more': 'Más información',
+        'home.participate.location.title': 'Ubicación',
+        'home.participate.location.text': 'El simposio se realizará en dos ubicaciones: Universidad Distrital (mañana) y Pontificia Universidad Javeriana (tarde). Consulta la ubicación exacta y cómo llegar.',
+        'home.participate.location.view': 'Ver ubicación',
+        'footer.developed': 'Desarrollado por el Comité de Organización'
+      },
+      en: {
+        'nav.about': 'About the Symposium',
+        'nav.guests': 'Guests',
+        'nav.program': 'Program',
+        'nav.register': 'Registration',
+        'nav.location': 'Location',
+        'nav.committee': 'Committee',
+        'nav.contact': 'Contact',
+        'home.hero.title': 'Quantum Mechanics at its Centenary: A brief walk through its beginnings and present',
+        'home.hero.subtitle': 'Explore the latest advances in quantum physics with internationally renowned experts.',
+        'home.hero.register': 'Register now',
+        'home.hero.program': 'View program',
+        'home.about.title': 'About the Symposium',
+        'home.about.text': 'This event brings together students, researchers and experts in topics such as quantum computing, metrology and relativity.',
+        'home.about.organize': 'Organized by:',
+        'home.about.more': 'More information',
+        'home.guests.title': 'Guests',
+        'home.guests.text': 'Meet our speakers, specialists in quantum physics.',
+        'home.guests.view': 'View all guests',
+        'home.program.title': 'Event Program',
+        'home.program.text': 'Two days of keynote conferences, presentations and networking.',
+        'home.program.view': 'View full program',
+        'home.participate.title': 'Participate in the Symposium',
+        'home.participate.registration.title': 'Registration',
+        'home.participate.registration.text': 'Join the symposium for free. The form is now available.',
+        'home.participate.registration.more': 'More information',
+        'home.participate.location.title': 'Location',
+        'home.participate.location.text': 'The symposium will take place in two locations: Universidad Distrital (morning) and Pontificia Universidad Javeriana (afternoon). Check the exact location and how to get there.',
+        'home.participate.location.view': 'View location',
+        'footer.developed': 'Developed by the Organizing Committee'
+      }
+    };
+
+    // Get current language from localStorage or default to Spanish
+    let currentLang = localStorage.getItem('lang') || 'es';
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = currentLang;
+
+    // Function to translate content
+    function translate(lang) {
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          element.textContent = translations[lang][key];
+        }
+      });
+      
+      // Update language toggle button
+      const langBtn = document.getElementById('lang-toggle');
+      if (langBtn) {
+        const langCode = langBtn.querySelector('.lang-code');
+        if (langCode) {
+          langCode.textContent = lang.toUpperCase();
+        }
+      }
+      
+      // Update HTML lang attribute
+      document.documentElement.lang = lang;
+      
+      // Save preference
+      localStorage.setItem('lang', lang);
+    }
+
+    // Initialize translation on page load
+    translate(currentLang);
+
+    // Language toggle button
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+      langToggle.addEventListener('click', () => {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        translate(currentLang);
+      });
+    }
+
     // Mobile Navigation Toggle
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
@@ -119,7 +234,7 @@
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+      if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && (!langToggle || !langToggle.contains(e.target))) {
         navMenu.classList.remove('active');
         navToggle.classList.remove('active');
       }

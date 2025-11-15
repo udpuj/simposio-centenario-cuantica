@@ -17,6 +17,11 @@
         <img src="images/distrital.png" alt="Universidad Distrital Francisco José de Caldas" class="header-logo">
         <img src="images/javeriana.png" alt="Pontificia Universidad Javeriana" class="header-logo">
       </div>
+      <div class="lang-toggle">
+        <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-code">ES</span>
+        </button>
+      </div>
     </div>
     <nav>
       <div class="nav-brand">
@@ -24,13 +29,13 @@
       </div>
       <div class="nav-menu" id="nav-menu">
         <ul>
-          <li><a href="acerca.html">Acerca del Simposio</a></li>
-          <li><a href="invitados.html">Invitados</a></li>
-          <li><a href="programa.html">Programa</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="lugar.html">Lugar</a></li>
-          <li><a href="comite.html">Comité</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="acerca.html" data-i18n="nav.about">Acerca del Simposio</a></li>
+          <li><a href="invitados.html" data-i18n="nav.guests">Invitados</a></li>
+          <li><a href="programa.html" data-i18n="nav.program">Programa</a></li>
+          <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
+          <li><a href="lugar.html" data-i18n="nav.location">Lugar</a></li>
+          <li><a href="comite.html" data-i18n="nav.committee">Comité</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </div>
       <div class="nav-toggle" id="nav-toggle">
@@ -76,10 +81,69 @@
   <footer>
     <hr style="border:none; border-top:1px solid #1d2745; margin-bottom:1rem;">
     <p>© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas</p>
-    <p>Desarrollado por el Comité de Organización</p>
+    <p data-i18n="footer.developed">Desarrollado por el Comité de Organización</p>
   </footer>
 
   <script>
+    // Language translations
+    const translations = {
+      es: {
+        'nav.about': 'Acerca del Simposio',
+        'nav.guests': 'Invitados',
+        'nav.program': 'Programa',
+        'nav.register': 'Registro',
+        'nav.location': 'Lugar',
+        'nav.committee': 'Comité',
+        'nav.contact': 'Contacto',
+        'footer.developed': 'Desarrollado por el Comité de Organización'
+      },
+      en: {
+        'nav.about': 'About the Symposium',
+        'nav.guests': 'Guests',
+        'nav.program': 'Program',
+        'nav.register': 'Registration',
+        'nav.location': 'Location',
+        'nav.committee': 'Committee',
+        'nav.contact': 'Contact',
+        'footer.developed': 'Developed by the Organizing Committee'
+      }
+    };
+
+    // Get current language from localStorage or default to Spanish
+    let currentLang = localStorage.getItem('lang') || 'es';
+    document.documentElement.lang = currentLang;
+
+    // Function to translate content
+    function translate(lang) {
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          element.textContent = translations[lang][key];
+        }
+      });
+      
+      const langBtn = document.getElementById('lang-toggle');
+      if (langBtn) {
+        const langCode = langBtn.querySelector('.lang-code');
+        if (langCode) langCode.textContent = lang.toUpperCase();
+      }
+      
+      document.documentElement.lang = lang;
+      localStorage.setItem('lang', lang);
+    }
+
+    translate(currentLang);
+
+    // Language toggle button
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+      langToggle.addEventListener('click', () => {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        translate(currentLang);
+      });
+    }
+
     // Mobile Navigation Toggle
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
@@ -89,7 +153,6 @@
       navToggle.classList.toggle('active');
     });
 
-    // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-menu a').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('active');
@@ -97,9 +160,8 @@
       });
     });
 
-    // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+      if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && (!langToggle || !langToggle.contains(e.target))) {
         navMenu.classList.remove('active');
         navToggle.classList.remove('active');
       }
