@@ -690,6 +690,46 @@ section.section--participate {
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
+.org-logos--dark {
+  background: #1A2B4F;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+}
+
+.org-logos--dark .org-logo {
+  height: 96px;
+}
+
+.org-logos--dark .org-logo--large {
+  height: 115px;
+}
+
+.org-logo--invert {
+  filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.org-logo--featured {
+  height: 130px;
+}
+
+.org-logo--invert:hover {
+  filter: brightness(0) invert(1) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+@media (max-width: 640px) {
+  .org-logos--dark .org-logo {
+    height: 80px;
+  }
+
+  .org-logos--dark .org-logo--featured {
+    height: 110px;
+  }
+
+  .org-logos--dark .org-logo--large {
+    height: 95px;
+  }
+}
+
 /* ====== Botones ====== */
 .cta { 
   display: flex; 
