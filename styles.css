@@ -425,7 +425,7 @@ section.section--participate {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-size: 0.85rem;
-  color: var(--yellow-bright);
+  color: var(--accent-alt);
   margin-bottom: 0.5rem;
 }
 
@@ -442,18 +442,21 @@ section.section--participate {
   gap: 0.35rem;
   padding: 0.4rem 1rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.35);
   color: var(--accent-main);
   font-size: 0.9rem;
   font-weight: 600;
   border: 1px solid rgba(44, 86, 151, 0.2);
   backdrop-filter: blur(6px);
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.4);
 }
 
 .chip--outline {
-  background: transparent;
-  color: var(--header-text);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(26, 43, 79, 0.75);
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
 .hero__stats {
@@ -589,13 +592,13 @@ section.section--participate {
 /* Timeline */
 .timeline {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
 }
 
 .timeline__item {
   position: relative;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 1.25rem;
   border: 1px solid rgba(44, 86, 151, 0.15);
   background: rgba(255, 255, 255, 0.9);
@@ -603,7 +606,7 @@ section.section--participate {
 }
 
 .timeline__year {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--accent-alt);
   display: block;
