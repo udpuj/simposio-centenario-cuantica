@@ -24,7 +24,7 @@
     <div class="header-logos">
       <div class="header-logos-container">
         <img src="images/distrital.png" alt="Universidad Distrital Francisco José de Caldas" class="header-logo">
-        <img src="images/javeriana.png" alt="Pontificia Universidad Javeriana" class="header-logo">
+        <img src="images/javerianaDark.png" alt="Pontificia Universidad Javeriana" class="header-logo">
       </div>
       <div class="lang-toggle">
         <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
@@ -34,7 +34,7 @@
     </div>
     <nav>
       <div class="nav-brand">
-        <a href="index.html"><h3>Simposio Física Cuántica</h3></a>
+        <a href="index.html"><h3 data-i18n="nav.brand">Simposio Física Cuántica</h3></a>
       </div>
       <div class="nav-menu" id="nav-menu">
         <ul>
@@ -243,7 +243,7 @@
 
   <footer>
     <hr style="border:none; border-top:1px solid #1d2745; margin-bottom:1rem;">
-    <p>© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas</p>
+    <p data-i18n="footer.copyright">© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas</p>
     <p data-i18n="footer.developed">Desarrollado por el Comité de Organización</p>
   </footer>
 
@@ -251,6 +251,7 @@
     // Language translations
     const translations = {
       es: {
+        'nav.brand': 'Simposio Física Cuántica',
         'nav.about': 'Acerca del Simposio',
         'nav.guests': 'Invitados',
         'nav.program': 'Programa',
@@ -294,9 +295,11 @@
         'fri.16:00': 'Pausa para Café',
         'fri.16:15': 'OLED\'s',
         'fri.16:45': 'Metrología Cuántica',
+        'footer.copyright': '© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas',
         'footer.developed': 'Desarrollado por el Comité de Organización'
       },
       en: {
+        'nav.brand': 'Quantum Physics Symposium',
         'nav.about': 'About the Symposium',
         'nav.guests': 'Guests',
         'nav.program': 'Program',
@@ -340,6 +343,7 @@
         'fri.16:00': 'Coffee Break',
         'fri.16:15': 'OLED\'s',
         'fri.16:45': 'Quantum Metrology',
+        'footer.copyright': '© 2025 Quantum Physics Symposium — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas',
         'footer.developed': 'Developed by the Organizing Committee'
       }
     };
