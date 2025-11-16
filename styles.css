@@ -530,6 +530,13 @@ section.section--participate {
   text-align: center;
 }
 
+.hero__note {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent-alt);
+}
+
 /* Section headers */
 .section__header {
   max-width: 720px;
