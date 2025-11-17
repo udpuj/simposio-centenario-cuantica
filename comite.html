@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comité — Simposio de Física Cuántica 2025</title>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F558G27GN5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,7 +12,6 @@
 
     gtag('config', 'G-F558G27GN5');
   </script>
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Titillium+Web:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
@@ -59,7 +57,14 @@
     <section>
       <h1>Comité Organizador</h1>
       <p>El simposio es organizado por estudiantes y profesores de la Universidad Distrital Francisco José de Caldas y la Pontificia Universidad Javeriana.</p>
-      
+
+      <div style="margin-top: 3rem;">
+        <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-muted); line-height: 2;">
+          <li style="margin-bottom: 0.5rem;">• J. Alfonso Leyva, Pontificia Universidad Javeriana</li>
+          <li style="margin-bottom: 0.5rem;">• Angela Riaño, Pontificia Universidad Javeriana</li>
+          <li style="margin-bottom: 0.5rem;">• Nelson L. Forero, Universidad Distrital</li>
+        </ul>
+      </div>
       <div style="margin-top: 3rem;">
         <h2 style="margin-bottom: 1.5rem;">Universidad Distrital</h2>
         <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-muted); line-height: 2;">
@@ -78,7 +83,7 @@
           <li style="margin-bottom: 0.5rem;">• Valentina Beltrán, Estudiante de Física, Universidad Distrital</li>
         </ul>
       </div>
-      
+
       <div style="margin-top: 3rem;">
         <h2 style="margin-bottom: 1.5rem;">Pontificia Universidad Javeriana</h2>
         <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-muted); line-height: 2;">
@@ -96,7 +101,23 @@
           <li style="margin-bottom: 0.5rem;">• Wendy Hernandez Rojas, Estudiante de Matemáticas, Pontificia Universidad Javeriana</li>
         </ul>
       </div>
-    </section>
+
+      <div style="margin-top: 3rem;">
+        <h2 style="margin-bottom: 1.5rem;">Agradecimientos (Staff)</h2>
+
+        <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--text-heading); font-weight: 600;"> Universidad Distrital</h3>
+        <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-muted); line-height: 2;">
+          <li style="margin-bottom: 0.5rem;">• Ing. Eduardo Rodriguez</li>
+          <li style="margin-bottom: 0.5rem;">• Ing. Andres Baron</li>
+        </ul>
+
+        <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--text-heading); font-weight: 600;"> Pontificia Universidad Javeriana</h3>
+        <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-muted); line-height: 2;">
+          <li style="margin-bottom: 0.5rem;">• Ing. Milena Diaz</li>
+          <li style="margin-bottom: 0.5rem;">• Jessica Silva</li>
+        </ul>
+      </div>
+      </section>
   </main>
 
   <footer>
@@ -144,13 +165,13 @@
           element.textContent = translations[lang][key];
         }
       });
-      
+
       const langBtn = document.getElementById('lang-toggle');
       if (langBtn) {
         const langCode = langBtn.querySelector('.lang-code');
         if (langCode) langCode.textContent = lang.toUpperCase();
       }
-      
+
       document.documentElement.lang = lang;
       localStorage.setItem('lang', lang);
     }
