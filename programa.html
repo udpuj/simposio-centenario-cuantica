@@ -58,7 +58,7 @@
   <main>
     <section>
       <h1 data-i18n="program.title">Programa</h1>
-      
+
       <h3 data-i18n="program.thursday">Jueves 4 de diciembre</h3>
       <div class="table-wrap">
         <table>
@@ -153,7 +153,7 @@
           </tbody>
         </table>
       </div>
-      
+
       <h3 data-i18n="program.friday">Viernes 5 de diciembre</h3>
       <div class="table-wrap">
         <table>
@@ -227,7 +227,7 @@
             </tr>
             <tr>
               <td>16:15 - 16:45</td>
-              <td data-i18n="fri.16:15">OLED's</td>
+              <td data-i18n="fri.16:15">Fenómenos Cuánticos en Semiconductores Orgánicos</td>
               <td>Henry Méndez (PUJ)</td>
             </tr>
             <tr>
@@ -293,7 +293,7 @@
         'fri.15:00': 'Partículas de Prueba alrededor de uno y dos agujeros negros',
         'fri.15:30': 'Una vista a las vibraciones colectivas en mecánica cuántica: modelación teórica y medidas experimentales, validante,  con aplicaciones',
         'fri.16:00': 'Pausa para Café',
-        'fri.16:15': 'OLED\'s',
+        'fri.16:15': 'Fenómenos Cuánticos en Semiconductores Orgánicos',
         'fri.16:45': 'Metrología Cuántica',
         'footer.copyright': '© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas',
         'footer.developed': 'Desarrollado por el Comité de Organización'
@@ -341,7 +341,7 @@
         'fri.15:00': 'Test Particles around One and Two Black Holes',
         'fri.15:30': 'A view of collective vibrations in quantum mechanics: theoretical modelling and experimental measurements, validating,  with applications',
         'fri.16:00': 'Coffee Break',
-        'fri.16:15': 'OLED\'s',
+        'fri.16:15': 'Quantum Phenomena in Organic Semiconductors',
         'fri.16:45': 'Quantum Metrology',
         'footer.copyright': '© 2025 Quantum Physics Symposium — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas',
         'footer.developed': 'Developed by the Organizing Committee'
@@ -350,7 +350,7 @@
 
     // Get current language from localStorage or default to Spanish
     let currentLang = localStorage.getItem('lang') || 'es';
-    
+
     // Update HTML lang attribute
     document.documentElement.lang = currentLang;
 
@@ -363,15 +363,15 @@
           element.textContent = translations[lang][key];
         }
       });
-      
+
       // Update language toggle button
       const langBtn = document.getElementById('lang-toggle');
       const langCode = langBtn.querySelector('.lang-code');
       langCode.textContent = lang.toUpperCase();
-      
+
       // Update HTML lang attribute
       document.documentElement.lang = lang;
-      
+
       // Save preference
       localStorage.setItem('lang', lang);
     }
