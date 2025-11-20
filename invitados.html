@@ -1,461 +1,452 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invitados — Simposio de Física Cuántica 2025</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F558G27GN5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitados — Simposio de Física Cuántica 2025</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F558G27GN5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-F558G27GN5');
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Titillium+Web:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="header-logos">
-      <div class="header-logos-container">
-        <img src="images/distrital.png" alt="Universidad Distrital Francisco José de Caldas" class="header-logo">
-        <img src="images/javerianaDark.png" alt="Pontificia Universidad Javeriana" class="header-logo">
+      gtag('config', 'G-F558G27GN5');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Titillium+Web:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-logos">
+        <div class="header-logos-container">
+          <img src="images/distrital.png" alt="Universidad Distrital Francisco José de Caldas" class="header-logo">
+          <img src="images/javerianaDark.png" alt="Pontificia Universidad Javeriana" class="header-logo">
+        </div>
+        <div class="lang-toggle">
+          <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
+            <span class="lang-code">ES</span>
+          </button>
+        </div>
       </div>
-      <div class="lang-toggle">
-        <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
-          <span class="lang-code">ES</span>
-        </button>
-      </div>
-    </div>
-    <nav>
-      <div class="nav-brand">
-        <a href="index.html"><h3 data-i18n="nav.brand">Simposio Física Cuántica</h3></a>
-      </div>
-      <div class="nav-menu" id="nav-menu">
-        <ul>
-          <li><a href="acerca.html" data-i18n="nav.about">Acerca del Simposio</a></li>
-          <li><a href="invitados.html" data-i18n="nav.guests">Invitados</a></li>
-          <li><a href="programa.html" data-i18n="nav.program">Programa</a></li>
-          <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
-          <li><a href="lugar.html" data-i18n="nav.location">Lugar</a></li>
-          <li><a href="comite.html" data-i18n="nav.committee">Comité</a></li>
-          <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
-        </ul>
-      </div>
-      <div class="nav-toggle" id="nav-toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-  </header>
+      <nav>
+        <div class="nav-brand">
+          <a href="index.html"><h3 data-i18n="nav.brand">Simposio Física Cuántica</h3></a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <ul>
+            <li><a href="acerca.html" data-i18n="nav.about">Acerca del Simposio</a></li>
+            <li><a href="invitados.html" data-i18n="nav.guests">Invitados</a></li>
+            <li><a href="programa.html" data-i18n="nav.program">Programa</a></li>
+            <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
+            <li><a href="lugar.html" data-i18n="nav.location">Lugar</a></li>
+            <li><a href="comite.html" data-i18n="nav.committee">Comité</a></li>
+            <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
-  <main>
-    <section>
-      <h1 data-i18n="speakers.title">Ponentes</h1>
-      <p data-i18n="speakers.intro">Conoce a nuestros ponentes que compartirán sus investigaciones y conocimientos en el Simposio de Física Cuántica 2025. (Por orden alfabético)</p>
-      
-      <div class="grid grid-3" style="margin-top:2rem;">
-        
-        <div class="card">
-          <h3>David Berenstein</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.david-berenstein.affiliation">University of California, Santa Barbara</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.david-berenstein.areas">TBA</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.david-berenstein.bio">TBA (to be added)</p>
-        </div>
-        
-        <div class="card">
-          <h3>Reinaldo Bernal</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.reinaldo-bernal.affiliation">Pontificia Universidad Javeriana</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.reinaldo-bernal.areas">TBA</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.reinaldo-bernal.bio">TBA (to be added)</p>
-        </div>
-        
-        <div class="card">
-          <h3>María Esperanza Castellanos López</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.maria-castellanos.affiliation">Pontificia Universidad Javeriana</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.maria-castellanos.areas">Radiation & Medical Applications</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.maria-castellanos.bio">Física,  DSc en física radiológica y médica,
-            con amplia trayectoria en las áreas de radioterapia y radiología en
-            instituciones especializadas en el tratamiento y control del cáncer.
-            Líder del proyecto de creación de la Maestría en Física Médica
-            de la Pontificia Universidad Javeriana en la cual se desempeña
-            actualmente como docente. Ha colaborado con el Organismo
-            Internacional de la Energía Atómica (OIEA) como experta
-            internacional en múltiples misiones en el campo de la dosimetría y
-            la física médica, así como en el control regulatorio del uso de la
-            energía nuclear.</p>
-        </div>
-        
-        <div class="card">
-          <h3>John Hernan Diaz Forero</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.john-diaz.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.john-diaz.areas">Física de la materia condensada, Física atómica, Ingeniería de materiales, Enseñanza de la física</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.john-diaz.bio">John Hernan Diaz Forero es Licenciado en Ciencias Física egresado de la Universidad Distrital Francisco José de Caldas, con Especialización en Ciencias Física (Universidad Nacional de Colombia) y Maestría en Ciencias - Física (Universidad Nacional de Colombia); además es Doctorado en Ingeniería en la Universidad Distrital. Su trayectoria académica y profesional se ha orientado al estudio de la física de la materia condensada, la física atómica y la ingeniería de materiales, enfocándose en las propiedades estructurales y electrónicas de los materiales mediante técnicas de simulación computacional y métodos ab initio (DFT); igualmente, mantiene una línea de investigación en la enseñanza de la física. Ha sido docente en varias universidades colombianas, como la Fundación Universidad de América y la Fundación Universitaria Los Libertadores, y actualmente está vinculado como docente e investigador a la Universidad Distrital Francisco José de Caldas, donde desarrolla proyectos en simulación de sistemas físicos y se ha desempeñado como Coordinador del Programa Académico de Física. En cuanto a su producción científica, el profesor cuenta con 35 artículos publicados en revistas especializadas.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Carlos Gómez Vasco</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.carlos-gomez.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.carlos-gomez.areas">TBA</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.carlos-gomez.bio">TBA (to be added)</p>
-        </div>
-        
-        <div class="card">
-          <h3>Ángela María Guzmán</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.angela-guzman.affiliation">Presidenta Acolfísica</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.angela-guzman.areas">Óptica cuántica y atómica</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.angela-guzman.bio">Ángela María Guzmán es una destacada física colombiana reconocida internacionalmente por sus aportes a la óptica cuántica y atómica, así como por su liderazgo científico. Es Profesora Emérita y egresada distinguida del Departamento de Física de la Universidad Nacional de Colombia, institución donde contribuyó a la creación del programa de doctorado en Física Teórica. Obtuvo su PhD en Física en la Universidad Ludwig Maximilian de Múnich (Alemania) y realizó estancias postdoctorales en el Optical Sciences Center de la Universidad de Arizona (EE. UU.) y en Georgia Tech Lorraine (Francia). Fue miembro asociado y luego miembro senior del Centro Internacional Abdus Salam de Física Teórica (ICTP) en Trieste, y ha ocupado cargos de relevancia en organismos internacionales como Secretaria General de la Comisión Internacional de Óptica (ICO) y Presidenta del Grupo Asesor del Sistema Trieste en Ciencias y Aplicaciones Ópticas (TSOSA). Es Fellow de la sociedad internacional OPTICA, reconocimiento otorgado por sus contribuciones a la óptica cuántica y por la promoción de esta disciplina en países en desarrollo. En Colombia, se ha desempeñado como Presidenta de la Asociación Colombiana de Física (Acolfísica) y es miembro de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales. Posee también una maestría en Energías Renovables (Universidad Camilo José Cela – IMF) y un diplomado en innovación energética de la Universidad de Stanford, reafirmando su compromiso con la ciencia aplicada y el desarrollo sostenible.</p>
-        </div>
-        
-        <div class="card">
-          <h3>César Aurelio Herreño Fierro</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.cesar-herreno.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.cesar-herreno.areas">Plasmonics</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.cesar-herreno.bio">César Aurelio Herreño Fierro es Licenciado en Física por la Universidad Distrital Francisco José de Caldas, Magíster y Doctor en Ciencias–Física por la Universidad de los Andes. Actualmente se desempeña como Profesor Titular de la Facultad de Ciencias y Educación de la Universidad Distrital Francisco José de Caldas, donde lidera el Grupo de Instrumentación Científica & Didáctica y co-dirige el Laboratorio de Caracterización Óptica. Su labor investigativa se centra en el estudio de la óptica de materiales, particularmente en sistemas nanoestructurados con respuesta plasmónica, magnetoóptica y magnetoplasmónica, y sus aplicaciones en el desarrollo de sensores y dispositivos ópticos avanzados. Ha participado como investigador principal o co-líder en diversos proyectos financiados por Minciencias y la Universidad Distrital, orientados al diseño de biosensores plasmónicos y a la caracterización óptica de nanomateriales. Es miembro de la Sociedad Americana de Óptica (OPTICA) y de la Red Colombiana de Óptica, y cuenta con una destacada producción científica en revistas especializadas en óptica y materiales.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Luis Camilo Jiménez Borrego</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.luis-jimenez.affiliation">Pontificia Universidad Javeriana</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.luis-jimenez.areas">Quantum Metrology</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.luis-jimenez.bio">Luis Camilo Jiménez Borrego es Físico egresado de la Universidad Nacional de Colombia, donde también obtuvo el título de Magíster en Física con una investigación sobre la preparación y caracterización óptica y eléctrica de películas de óxidos metálicos. Posteriormente, obtuvo la Maestría en Educación en la Pontificia Universidad Javeriana, enfocando su trabajo en el razonamiento analógico aplicado a la enseñanza y resolución de problemas en física. Profesor titular de la Pontificia Universidad Javeriana desde 1987, ha desarrollado una destacada labor académica y administrativa como Director del Grupo de Investigación en Películas Delgadas, Coordinador de Laboratorios de Física y Jefe de Departamento. Su experiencia investigativa se centra en la física de materiales, particularmente en la elaboración, caracterización y modelado de películas delgadas y semiconductores, la instrumentación científica y la espectroscopía óptica en el visible e infrarrojo. Ha liderado múltiples proyectos de diseño y construcción de sistemas experimentales para el estudio de propiedades ópticas, térmicas y eléctricas de materiales, incluyendo estaciones de elipsometría, bancos de medición de efecto Hall y sistemas de deposición por sputtering.</p>
-        </div>
-        
-        <div class="card">
-          <h3>J. Alfonso Leyva</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.alfonso-leyva.affiliation">Pontificia Universidad Javeriana</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.alfonso-leyva.areas">TBA</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.alfonso-leyva.bio">TBA (to be added)</p>
-        </div>
+    <main>
+      <section>
+        <h1 data-i18n="speakers.title">Ponentes</h1>
+        <p data-i18n="speakers.intro">Conoce a nuestros ponentes que compartirán sus investigaciones y conocimientos en el Simposio de Física Cuántica 2025. (Por orden alfabético)</p>
 
-        <div class="card">
-          <h3>Henry Alberto Méndez Pinzón</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.henry-mendez.affiliation">Pontificia Universidad Javeriana</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.henry-mendez.areas">OLED's</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.henry-mendez.bio">Henry Alberto Méndez Pinzón es Físico egresado de la Universidad Nacional de Colombia, con Maestría en Ciencias Físicas en la misma institución y Doctorado en Organic Modification of Metal/Semiconductor Contacts otorgado por la Chemnitz University of Technology (Alemania). Su trayectoria académica y profesional se ha desarrollado en el campo de la física del estado sólido y la ciencia de materiales, con especial énfasis en la ingeniería de superficies, la modificación orgánica de interfaces metal-semiconductor y el estudio de sus propiedades electrónicas. Su trabajo de investigación ha contribuido al desarrollo de materiales avanzados y tecnologías innovadoras, vinculándose directamente con los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas, en particular con el ODS 3 (Salud y bienestar) y el ODS 9 (Industria, innovación e infraestructura). Además, ha participado en proyectos interdisciplinarios que integran la física, la ingeniería y la biotecnología, fortaleciendo el vínculo entre la investigación científica y la aplicación tecnológica.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Edwin Munévar Espitia</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.edwin-munevar.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.edwin-munevar.areas">Neutrons & Cells</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.edwin-munevar.bio">Edwin Munévar Espitia es Licenciado en Física egresado de la Universidad Distrital Francisco José de Caldas, Magíster en Ciencias–Física por la Universidad de los Andes y Doctor en Física por The George Washington University (Estados Unidos), institución en la que también obtuvo el título de Master of Science y desarrolló su investigación doctoral sobre la medición de asimetrías en haces de fotones. Su formación ha estado centrada en la física nuclear y de partículas, con especial interés en la fisión inducida por fotones y en la simulación computacional de la interacción radiación-materia. Ha complementado su trayectoria con formación en computación de alto rendimiento (Universidad Técnica Federico Santa María). Actualmente es profesor de planta en la Universidad Distrital Francisco José de Caldas, sus líneas de investigación activas incluyen la física de energías intermedias, la física computacional, la fisión nuclear inducida por fotones y la simulación de procesos de interacción radiación-materia.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Henry Mauricio Ortiz Salamanca</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.henry-ortiz.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.henry-ortiz.areas">DFT, Solid State & Raman Spectroscopy</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.henry-ortiz.bio">Henry Mauricio Ortíz Salamanca es Físico egresado de la Universidad Nacional de Colombia, con Maestría en Física (Universidad Nacional de Colombia) y Doctorado en Nanociencia y Nanotecnología en el CINVESTAV-IPN (México). Su trayectoria académica y profesional se ha orientado al estudio de las propiedades físicas (estructurales, vibracionales y electrónicas) de materiales y nuevos materiales, mediante técnicas de modelación teórica computacional, ab-initio, y experimental, espectroscopía Raman; igualmente, en el área de los sensores está el estudio de la interacción electrón-fonon, magnón fonon y plasmón-fonon (en física fundamental) y experimentalmente en la implementación de la técnica de espectroscopía Raman mejorada y aumentada. Ha sido docente e investigador en varias universidades colombianas y actualmente está vinculado a la Universidad Distrital Francisco José de Caldas, donde desarrolla proyectos en nuevos materiales, nanotecnología, biofísica y física de la materia condensada. En cuanto a su producción científica, el profesor cuenta con 15 artículos publicados en revistas especializadas y 5 a proyectos de investigación y extensión.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Olga Lucía Ospina Ramírez</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.olga-ospina.affiliation">Pontificia Universidad Javeriana</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.olga-ospina.areas">Sistema Surfactante Pulmonar</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.olga-ospina.bio">Olga Lucía Ospina Ramírez es Doctora en Bioquímica y Biología Molecular por la Universidad Complutense de Madrid (2011), Magíster en Biología y Licenciada en Física por la Pontificia Universidad Javeriana (2004 y 1998, respectivamente). Su trayectoria académica se ha caracterizado por la integración de la biología molecular, la bioingeniería y las ciencias físicas, promoviendo la formación interdisciplinaria en áreas como la biotecnología, la microbiología industrial y la química farmacéutica. Su trabajo contribuye al cumplimiento del ODS 4 (Educación de calidad) de las Naciones Unidas, mediante la dirección y fortalecimiento de programas académicos orientados a la enseñanza de las ciencias naturales y la formación de profesionales en ingeniería y biociencias. Ha estado vinculada a programas de Bioingeniería, Biología, Ingeniería Civil, Ingeniería Electrónica, Ingeniería Industrial, Ingeniería Mecánica, Ingeniería Mecatrónica, Ingeniería de Sistemas, Licenciatura en Ciencias Naturales y Educación Ambiental, Microbiología Industrial y Química Farmacéutica, impulsando proyectos que promueven la investigación aplicada, la sostenibilidad y la innovación tecnológica.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Germán Alexander Pabón Rosas</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.german-pabon.affiliation">Pontificia Universidad Javeriana</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.german-pabon.areas">Photosynthesis</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.german-pabon.bio">Germán Alexander Pabón Rosas es Físico egresado de la Universidad Nacional de Colombia, donde también obtuvo el título de Magíster en Ciencias Físicas. Posteriormente realizó el Doctorado en Biofísica y Bioquímica Biofísica en la Johns Hopkins University (Estados Unidos), consolidando una trayectoria interdisciplinaria entre la física y las ciencias biomédicas. Su labor académica y científica se orienta al estudio de sistemas biológicos desde la perspectiva de la física, con énfasis en la biofísica molecular, la bioquímica estructural y la interacción entre biomoléculas y materiales. Ha participado en proyectos vinculados a programas académicos de biología, bioingeniería, microbiología, química farmacéutica e ingenierías aplicadas, promoviendo la integración de la física con las ciencias de la vida. Su enfoque investigativo contribuye al fortalecimiento de áreas emergentes como la física médica y la modelación biológica, aportando al desarrollo de la biotecnología y la investigación interdisciplinaria en Colombia.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Fredie Rojas Tarazona</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.fredie-rojas.affiliation">Pontificia Universidad Javeriana</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.fredie-rojas.areas">Photovoltaic Solar cells</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.fredie-rojas.bio">Fredie Rojas Tarazona es Licenciado en Física de la Pontificia Universidad Javeriana, con formación avanzada en la Universidad Nacional de Colombia, donde obtuvo los títulos de Especialista y Magíster en Ciencias Físicas. Posteriormente cursó estudios de posgrado en la Universitat de Barcelona (España), donde alcanzó el Doctorado en Física y el Diploma de Estudios Avanzados en Física y Ciencia de Materiales. Su labor investigativa se centra en la física y ciencia de materiales, con especial interés en el desarrollo de tecnologías orientadas a la energía asequible y no contaminante (ODS 7). Ha contribuido a la comprensión y optimización de materiales con aplicaciones en energías renovables, conversión fotovoltaica y dispositivos optoelectrónicos, promoviendo la vinculación entre la investigación fundamental y las necesidades energéticas sostenibles. Asimismo, ha participado en programas académicos vinculados a la ingeniería, la bioingeniería y las matemáticas, consolidando una trayectoria interdisciplinaria que integra la física aplicada con la innovación tecnológica y la sostenibilidad energética.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Julián Andrés Salamanca Bernal</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.julian-salamanca.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.julian-salamanca.areas">Quantum computing</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.julian-salamanca.bio">Julián Andrés Salamanca Bernal es Licenciado en Física egresado de la Universidad Distrital Francisco José de Caldas, con Maestría en Ciencias - Física de la Universidad de los Andes y PhD en Física Aplicada de Idaho State University. Su trayectoria académica se ha enfocado en la física de partículas y la física aplicada, con una tesis doctoral centrada en la fotoproducción coherente de mesones phi usando luz polarizada y una tesis de maestría enfocada en el cálculo de la aceptancia del detector CLAS.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Andrés Vargas Domínguez</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.andres-vargas.affiliation">Pontificia Universidad Javeriana</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.andres-vargas.areas">Geometric Methods & QM</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.andres-vargas.bio">Andrés Vargas Domínguez es Físico y Matemático egresado de la Universidad de los Andes, donde también obtuvo el título de Magíster en Matemáticas. Posteriormente, obtuvo su Doctorado en Matemáticas en la Universidad de Bonn (Alemania), institución reconocida por su tradición en investigación fundamental en matemáticas puras y aplicadas. Actualmente, se desempeña como Profesor Titular del Departamento de Matemáticas y líder del grupo de investigación en Física Matemática, del cual también es miembro activo. Su labor académica se ha orientado al estudio riguroso de los fundamentos matemáticos de la física teórica, con especial interés en las estructuras geométricas y analíticas que subyacen en los modelos físicos contemporáneos.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Nelson Alonso Velandia Heredia</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.nelson-velandia.affiliation">Pontificia Universidad Javeriana</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.nelson-velandia.areas">Black Holes</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.nelson-velandia.bio">Nelson Alonso Velandia Heredia S.J. es Licenciado en Filosofía, Licenciado en Física y Profesional en Teología por la Pontificia Universidad Javeriana. Es además Magíster y Doctor en Ciencias – Física por la Universidad Nacional de Colombia. Su formación integra de manera singular las ciencias naturales, las humanidades y la teología, permitiéndole abordar el conocimiento desde una perspectiva transdisciplinar que busca tender puentes entre la razón científica y la reflexión filosófico-teológica. Actualmente, está vinculado al centro de estudios "El ser humano en el cosmos", una iniciativa que reúne a las facultades de Ciencias, Teología y Filosofía de la Pontificia Universidad Javeriana con el propósito de explorar las grandes preguntas sobre el origen del universo, la vida y el papel de la humanidad en el cosmos. Desde este espacio, participa activamente en el seminario permanente de profesores, los coloquios Ortiz-Chardin, la asesoría del grupo estudiantil Astrojave, la AstroRed Bogotá y la cátedra del CFT: El ser humano en el cosmos.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Herbert Vinck</h3>
-          <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.herbert-vinck.affiliation">Universidad Nacional de Colombia - Sistema General de Regalías (SGR)</span></p>
-          <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.herbert-vinck.areas">TBA</span></p>
-          <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.herbert-vinck.bio">TBA (to be added)</p>
-        </div>
+        <div class="grid grid-3" style="margin-top:2rem;">
 
-      </div>
-    </section>
-  </main>
+          <div class="card">
+            <h3>David Berenstein</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.david-berenstein.affiliation">University of California, Santa Barbara</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.david-berenstein.areas">Teoría de cuerdas, Correspondencia AdS/CFT, Integrabilidad</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.david-berenstein.bio">David Berenstein es un físico teórico formado en la Universidad Nacional de Colombia...</p>
+          </div>
 
-  <footer>
-    <hr style="border:none; border-top:1px solid #1d2745; margin-bottom:1rem;">
-    <p data-i18n="footer.copyright">© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas</p>
-    <p data-i18n="footer.developed">Desarrollado por el Comité de Organización</p>
-  </footer>
+          <div class="card">
+            <h3>Reinaldo Bernal</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.reinaldo-bernal.affiliation">Pontificia Universidad Javeriana</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.reinaldo-bernal.areas">TBA</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.reinaldo-bernal.bio">TBA (to be added)</p>
+          </div>
 
-  <script>
-    // Language translations
-    const translations = {
-      es: {
-        'nav.brand': 'Simposio Física Cuántica',
-        'nav.about': 'Acerca del Simposio',
-        'nav.guests': 'Invitados',
-        'nav.program': 'Programa',
-        'nav.register': 'Registro',
-        'nav.location': 'Lugar',
-        'nav.committee': 'Comité',
-        'nav.contact': 'Contacto',
-        'footer.developed': 'Desarrollado por el Comité de Organización',
-        'speakers.title': 'Ponentes',
-        'speakers.intro': 'Conoce a nuestros ponentes que compartirán sus investigaciones y conocimientos en el Simposio de Física Cuántica 2025. (Por orden alfabético)',
-        'speakers.affiliation-label': 'Afiliación:',
-        'speakers.research-label': 'Áreas de investigación:',
-        
-        'speaker.david-berenstein.affiliation': 'University of California, Santa Barbara',
-        'speaker.david-berenstein.areas': 'TBA',
-        'speaker.david-berenstein.bio': 'TBA (to be added)',
-        
-        'speaker.reinaldo-bernal.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.reinaldo-bernal.areas': 'TBA',
-        'speaker.reinaldo-bernal.bio': 'TBA (to be added)',
-        
-        'speaker.maria-castellanos.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.maria-castellanos.areas': 'Radiation & Medical Applications',
-        'speaker.maria-castellanos.bio': 'Física,  DSc en física radiológica y médica, con amplia trayectoria en las áreas de radioterapia y radiología en instituciones especializadas en el tratamiento y control del cáncer. Líder del proyecto de creación de la Maestría en Física Médica de la Pontificia Universidad Javeriana en la cual se desempeña actualmente como docente. Ha colaborado con el Organismo Internacional de la Energía Atómica (OIEA) como experta internacional en múltiples misiones en el campo de la dosimetría y la física médica, así como en el control regulatorio del uso de la energía nuclear.',
-        
-        'speaker.john-diaz.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.john-diaz.areas': 'Física de la materia condensada, Física atómica, Ingeniería de materiales, Enseñanza de la física',
-        'speaker.john-diaz.bio': 'John Hernan Diaz Forero es Licenciado en Ciencias Física egresado de la Universidad Distrital Francisco José de Caldas, con Especialización en Ciencias Física (Universidad Nacional de Colombia) y Maestría en Ciencias - Física (Universidad Nacional de Colombia); además es Doctorado en Ingeniería en la Universidad Distrital. Su trayectoria académica y profesional se ha orientado al estudio de la física de la materia condensada, la física atómica y la ingeniería de materiales, enfocándose en las propiedades estructurales y electrónicas de los materiales mediante técnicas de simulación computacional y métodos ab initio (DFT); igualmente, mantiene una línea de investigación en la enseñanza de la física. Ha sido docente en varias universidades colombianas, como la Fundación Universidad de América y la Fundación Universitaria Los Libertadores, y actualmente está vinculado como docente e investigador a la Universidad Distrital Francisco José de Caldas, donde desarrolla proyectos en simulación de sistemas físicos y se ha desempeñado como Coordinador del Programa Académico de Física. En cuanto a su producción científica, el profesor cuenta con 35 artículos publicados en revistas especializadas.',
-        
-        'speaker.carlos-gomez.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.carlos-gomez.areas': 'TBA',
-        'speaker.carlos-gomez.bio': 'TBA (to be added)',
+          <div class="card">
+            <h3>María Esperanza Castellanos López</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.maria-castellanos.affiliation">Pontificia Universidad Javeriana</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.maria-castellanos.areas">Física Médica, Dosimetría Clínica, Protección Radiológica</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.maria-castellanos.bio">Física, DSc en física radiológica y médica...</p>
+          </div>
 
-        'speaker.angela-guzman.affiliation': 'Presidenta Acolfísica',
-        'speaker.angela-guzman.areas': 'Óptica cuántica y atómica',
-        'speaker.angela-guzman.bio': 'Ángela María Guzmán es una destacada física colombiana reconocida internacionalmente por sus aportes a la óptica cuántica y atómica, así como por su liderazgo científico. Es Profesora Emérita y egresada distinguida del Departamento de Física de la Universidad Nacional de Colombia, institución donde contribuyó a la creación del programa de doctorado en Física Teórica. Obtuvo su PhD en Física en la Universidad Ludwig Maximilian de Múnich (Alemania) y realizó estancias postdoctorales en el Optical Sciences Center de la Universidad de Arizona (EE. UU.) y en Georgia Tech Lorraine (Francia). Fue miembro asociado y luego miembro senior del Centro Internacional Abdus Salam de Física Teórica (ICTP) en Trieste, y ha ocupado cargos de relevancia en organismos internacionales como Secretaria General de la Comisión Internacional de Óptica (ICO) y Presidenta del Grupo Asesor del Sistema Trieste en Ciencias y Aplicaciones Ópticas (TSOSA). Es Fellow de la sociedad internacional OPTICA, reconocimiento otorgado por sus contribuciones a la óptica cuántica y por la promoción de esta disciplina en países en desarrollo. En Colombia, se ha desempeñado como Presidenta de la Asociación Colombiana de Física (Acolfísica) y es miembro de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales. Posee también una maestría en Energías Renovables (Universidad Camilo José Cela – IMF) y un diplomado en innovación energética de la Universidad de Stanford, reafirmando su compromiso con la ciencia aplicada y el desarrollo sostenible.',
-        
-        'speaker.cesar-herreno.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.cesar-herreno.areas': 'Plasmonics',
-        'speaker.cesar-herreno.bio': 'César Aurelio Herreño Fierro es Licenciado en Física por la Universidad Distrital Francisco José de Caldas, Magíster y Doctor en Ciencias–Física por la Universidad de los Andes. Actualmente se desempeña como Profesor Titular de la Facultad de Ciencias y Educación de la Universidad Distrital Francisco José de Caldas, donde lidera el Grupo de Instrumentación Científica & Didáctica y co-dirige el Laboratorio de Caracterización Óptica. Su labor investigativa se centra en el estudio de la óptica de materiales, particularmente en sistemas nanoestructurados con respuesta plasmónica, magnetoóptica y magnetoplasmónica, y sus aplicaciones en el desarrollo de sensores y dispositivos ópticos avanzados. Ha participado como investigador principal o co-líder en diversos proyectos financiados por Minciencias y la Universidad Distrital, orientados al diseño de biosensores plasmónicos y a la caracterización óptica de nanomateriales. Es miembro de la Sociedad Americana de Óptica (OPTICA) y de la Red Colombiana de Óptica, y cuenta con una destacada producción científica en revistas especializadas en óptica y materiales.',
-        
-        'speaker.luis-jimenez.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.luis-jimenez.areas': 'Quantum Metrology',
-        'speaker.luis-jimenez.bio': 'Luis Camilo Jiménez Borrego es Físico egresado de la Universidad Nacional de Colombia, donde también obtuvo el título de Magíster en Física con una investigación sobre la preparación y caracterización óptica y eléctrica de películas de óxidos metálicos. Posteriormente, obtuvo la Maestría en Educación en la Pontificia Universidad Javeriana, enfocando su trabajo en el razonamiento analógico aplicado a la enseñanza y resolución de problemas en física. Profesor titular de la Pontificia Universidad Javeriana desde 1987, ha desarrollado una destacada labor académica y administrativa como Director del Grupo de Investigación en Películas Delgadas, Coordinador de Laboratorios de Física y Jefe de Departamento. Su experiencia investigativa se centra en la física de materiales, particularmente en la elaboración, caracterización y modelado de películas delgadas y semiconductores, la instrumentación científica y la espectroscopía óptica en el visible e infrarrojo. Ha liderado múltiples proyectos de diseño y construcción de sistemas experimentales para el estudio de propiedades ópticas, térmicas y eléctricas de materiales, incluyendo estaciones de elipsometría, bancos de medición de efecto Hall y sistemas de deposición por sputtering.',
-        
-        'speaker.alfonso-leyva.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.alfonso-leyva.areas': 'TBA',
-        'speaker.alfonso-leyva.bio': 'TBA (to be added)',
-        
-        'speaker.henry-mendez.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.henry-mendez.areas': "OLED's",
-        'speaker.henry-mendez.bio': 'Henry Alberto Méndez Pinzón es Físico egresado de la Universidad Nacional de Colombia, con Maestría en Ciencias Físicas en la misma institución y Doctorado en Organic Modification of Metal/Semiconductor Contacts otorgado por la Chemnitz University of Technology (Alemania). Su trayectoria académica y profesional se ha desarrollado en el campo de la física del estado sólido y la ciencia de materiales, con especial énfasis en la ingeniería de superficies, la modificación orgánica de interfaces metal-semiconductor y el estudio de sus propiedades electrónicas. Su trabajo de investigación ha contribuido al desarrollo de materiales avanzados y tecnologías innovadoras, vinculándose directamente con los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas, en particular con el ODS 3 (Salud y bienestar) y el ODS 9 (Industria, innovación e infraestructura). Además, ha participado en proyectos interdisciplinarios que integran la física, la ingeniería y la biotecnología, fortaleciendo el vínculo entre la investigación científica y la aplicación tecnológica.',
-        
-        'speaker.edwin-munevar.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.edwin-munevar.areas': 'Neutrons & Cells',
-        'speaker.edwin-munevar.bio': 'Edwin Munévar Espitia es Licenciado en Física egresado de la Universidad Distrital Francisco José de Caldas, Magíster en Ciencias–Física por la Universidad de los Andes y Doctor en Física por The George Washington University (Estados Unidos), institución en la que también obtuvo el título de Master of Science y desarrolló su investigación doctoral sobre la medición de asimetrías en haces de fotones. Su formación ha estado centrada en la física nuclear y de partículas, con especial interés en la fisión inducida por fotones y en la simulación computacional de la interacción radiación-materia. Ha complementado su trayectoria con formación en computación de alto rendimiento (Universidad Técnica Federico Santa María). Actualmente es profesor de planta en la Universidad Distrital Francisco José de Caldas, sus líneas de investigación activas incluyen la física de energías intermedias, la física computacional, la fisión nuclear inducida por fotones y la simulación de procesos de interacción radiación-materia.',
-        
-        'speaker.henry-ortiz.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.henry-ortiz.areas': 'DFT, Solid State & Raman Spectroscopy',
-        'speaker.henry-ortiz.bio': 'Henry Mauricio Ortíz Salamanca es Físico egresado de la Universidad Nacional de Colombia, con Maestría en Física (Universidad Nacional de Colombia) y Doctorado en Nanociencia y Nanotecnología en el CINVESTAV-IPN (México). Su trayectoria académica y profesional se ha orientado al estudio de las propiedades físicas (estructurales, vibracionales y electrónicas) de materiales y nuevos materiales, mediante técnicas de modelación teórica computacional, ab-initio, y experimental, espectroscopía Raman; igualmente, en el área de los sensores está el estudio de la interacción electrón-fonon, magnón fonon y plasmón-fonon (en física fundamental) y experimentalmente en la implementación de la técnica de espectroscopía Raman mejorada y aumentada. Ha sido docente e investigador en varias universidades colombianas y actualmente está vinculado a la Universidad Distrital Francisco José de Caldas, donde desarrolla proyectos en nuevos materiales, nanotecnología, biofísica y física de la materia condensada. En cuanto a su producción científica, el profesor cuenta con 15 artículos publicados en revistas especializadas y 5 a proyectos de investigación y extensión.',
-        
-        'speaker.olga-ospina.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.olga-ospina.areas': 'Sistema Surfactante Pulmonar',
-        'speaker.olga-ospina.bio': 'Olga Lucía Ospina Ramírez es Doctora en Bioquímica y Biología Molecular por la Universidad Complutense de Madrid (2011), Magíster en Biología y Licenciada en Física por la Pontificia Universidad Javeriana (2004 y 1998, respectivamente). Su trayectoria académica se ha caracterizado por la integración de la biología molecular, la bioingeniería y las ciencias físicas, promoviendo la formación interdisciplinaria en áreas como la biotecnología, la microbiología industrial y la química farmacéutica. Su trabajo contribuye al cumplimiento del ODS 4 (Educación de calidad) de las Naciones Unidas, mediante la dirección y fortalecimiento de programas académicos orientados a la enseñanza de las ciencias naturales y la formación de profesionales en ingeniería y biociencias. Ha estado vinculada a programas de Bioingeniería, Biología, Ingeniería Civil, Ingeniería Electrónica, Ingeniería Industrial, Ingeniería Mecánica, Ingeniería Mecatrónica, Ingeniería de Sistemas, Licenciatura en Ciencias Naturales y Educación Ambiental, Microbiología Industrial y Química Farmacéutica, impulsando proyectos que promueven la investigación aplicada, la sostenibilidad y la innovación tecnológica.',
-        
-        'speaker.german-pabon.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.german-pabon.areas': 'Photosynthesis',
-        'speaker.german-pabon.bio': 'Germán Alexander Pabón Rosas es Físico egresado de la Universidad Nacional de Colombia, donde también obtuvo el título de Magíster en Ciencias Físicas. Posteriormente realizó el Doctorado en Biofísica y Bioquímica Biofísica en la Johns Hopkins University (Estados Unidos), consolidando una trayectoria interdisciplinaria entre la física y las ciencias biomédicas. Su labor académica y científica se orienta al estudio de sistemas biológicos desde la perspectiva de la física, con énfasis en la biofísica molecular, la bioquímica estructural y la interacción entre biomoléculas y materiales. Ha participado en proyectos vinculados a programas académicos de biología, bioingeniería, microbiología, química farmacéutica e ingenierías aplicadas, promoviendo la integración de la física con las ciencias de la vida. Su enfoque investigativo contribuye al fortalecimiento de áreas emergentes como la física médica y la modelación biológica, aportando al desarrollo de la biotecnología y la investigación interdisciplinaria en Colombia.',
-        
-        'speaker.fredie-rojas.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.fredie-rojas.areas': 'Photovoltaic Solar cells',
-        'speaker.fredie-rojas.bio': 'Fredie Rojas Tarazona es Licenciado en Física de la Pontificia Universidad Javeriana, con formación avanzada en la Universidad Nacional de Colombia, donde obtuvo los títulos de Especialista y Magíster en Ciencias Físicas. Posteriormente cursó estudios de posgrado en la Universitat de Barcelona (España), donde alcanzó el Doctorado en Física y el Diploma de Estudios Avanzados en Física y Ciencia de Materiales. Su labor investigativa se centra en la física y ciencia de materiales, con especial interés en el desarrollo de tecnologías orientadas a la energía asequible y no contaminante (ODS 7). Ha contribuido a la comprensión y optimización de materiales con aplicaciones en energías renovables, conversión fotovoltaica y dispositivos optoelectrónicos, promoviendo la vinculación entre la investigación fundamental y las necesidades energéticas sostenibles. Asimismo, ha participado en programas académicos vinculados a la ingeniería, la bioingeniería y las matemáticas, consolidando una trayectoria interdisciplinaria que integra la física aplicada con la innovación tecnológica y la sostenibilidad energética.',
-        
-        'speaker.julian-salamanca.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.julian-salamanca.areas': 'Quantum computing',
-        'speaker.julian-salamanca.bio': 'Julián Andrés Salamanca Bernal es Licenciado en Física egresado de la Universidad Distrital Francisco José de Caldas, con Maestría en Ciencias - Física de la Universidad de los Andes y PhD en Física Aplicada de Idaho State University. Su trayectoria académica se ha enfocado en la física de partículas y la física aplicada, con una tesis doctoral centrada en la fotoproducción coherente de mesones phi usando luz polarizada y una tesis de maestría enfocada en el cálculo de la aceptancia del detector CLAS.',
-        
-        'speaker.andres-vargas.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.andres-vargas.areas': 'Geometric Methods & QM',
-        'speaker.andres-vargas.bio': 'Andrés Vargas Domínguez es Físico y Matemático egresado de la Universidad de los Andes, donde también obtuvo el título de Magíster en Matemáticas. Posteriormente, obtuvo su Doctorado en Matemáticas en la Universidad de Bonn (Alemania), institución reconocida por su tradición en investigación fundamental en matemáticas puras y aplicadas. Actualmente, se desempeña como Profesor Titular del Departamento de Matemáticas y líder del grupo de investigación en Física Matemática, del cual también es miembro activo. Su labor académica se ha orientado al estudio riguroso de los fundamentos matemáticos de la física teórica, con especial interés en las estructuras geométricas y analíticas que subyacen en los modelos físicos contemporáneos.',
-        
-        'speaker.nelson-velandia.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.nelson-velandia.areas': 'Black Holes',
-        'speaker.nelson-velandia.bio': 'Nelson Alonso Velandia Heredia S.J. es Licenciado en Filosofía, Licenciado en Física y Profesional en Teología por la Pontificia Universidad Javeriana. Es además Magíster y Doctor en Ciencias – Física por la Universidad Nacional de Colombia. Su formación integra de manera singular las ciencias naturales, las humanidades y la teología, permitiéndole abordar el conocimiento desde una perspectiva transdisciplinar que busca tender puentes entre la razón científica y la reflexión filosófico-teológica. Actualmente, está vinculado al centro de estudios "El ser humano en el cosmos", una iniciativa que reúne a las facultades de Ciencias, Teología y Filosofía de la Pontificia Universidad Javeriana con el propósito de explorar las grandes preguntas sobre el origen del universo, la vida y el papel de la humanidad en el cosmos. Desde este espacio, participa activamente en el seminario permanente de profesores, los coloquios Ortiz-Chardin, la asesoría del grupo estudiantil Astrojave, la AstroRed Bogotá y la cátedra del CFT: El ser humano en el cosmos.',
-        
-        'speaker.herbert-vinck.affiliation': 'Universidad Nacional de Colombia - Sistema General de Regalías (SGR)',
-        'speaker.herbert-vinck.areas': 'TBA',
-        'speaker.herbert-vinck.bio': 'TBA (to be added)',
-        
-        'footer.copyright': '© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas'
-      },
-      en: {
-        'nav.brand': 'Quantum Physics Symposium',
-        'nav.about': 'About the Symposium',
-        'nav.guests': 'Guests',
-        'nav.program': 'Program',
-        'nav.register': 'Registration',
-        'nav.location': 'Location',
-        'nav.committee': 'Committee',
-        'nav.contact': 'Contact',
-        'footer.developed': 'Developed by the Organizing Committee',
-        'speakers.title': 'Speakers',
-        'speakers.intro': 'Meet the speakers who will share their research and insights during the Quantum Physics Symposium 2025. (By alphabetical order)',
-        'speakers.affiliation-label': 'Affiliation:',
-        'speakers.research-label': 'Research areas:',
-        
-        'speaker.david-berenstein.affiliation': 'University of California, Santa Barbara',
-        'speaker.david-berenstein.areas': 'TBA',
-        'speaker.david-berenstein.bio': 'TBA (to be added)',
-        
-        'speaker.reinaldo-bernal.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.reinaldo-bernal.areas': 'TBA',
-        'speaker.reinaldo-bernal.bio': 'TBA (to be added)',
-        
-        'speaker.maria-castellanos.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.maria-castellanos.areas': 'Radiation & Medical Applications',
-        'speaker.maria-castellanos.bio': 'Physicist, DSc in radiological and medical physics, with extensive experience in the areas of radiotherapy and radiology in institutions specialized in cancer treatment and control. Leader of the project to create the Master\'s program in Medical Physics at Pontificia Universidad Javeriana, where she currently works as a professor. She has collaborated with the International Atomic Energy Agency (IAEA) as an international expert on multiple missions in the field of dosimetry and medical physics, as well as in the regulatory control of the use of nuclear energy.',
-        
-        'speaker.john-diaz.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.john-diaz.areas': 'Condensed matter physics, Atomic physics, Materials engineering, Physics education',
-        'speaker.john-diaz.bio': 'John Hernan Diaz Forero holds a degree in Physics Education from Universidad Distrital Francisco José de Caldas, a specialization in Physics Science, and a Master in Physics from Universidad Nacional de Colombia, as well as a PhD in Engineering from Universidad Distrital. His work centers on condensed matter physics, atomic physics, and materials engineering, focusing on the structural and electronic properties of materials through computational simulations and ab initio (DFT) methods, while also maintaining a research line on physics education. He has been a faculty member at several Colombian institutions such as Fundación Universidad de América and Fundación Universitaria Los Libertadores, and now teaches and researches at Universidad Distrital Francisco José de Caldas, where he leads projects on physical system simulations and has served as Academic Program Coordinator for Physics. His publication record includes 35 peer-reviewed articles.',
-        
-        'speaker.carlos-gomez.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.carlos-gomez.areas': 'TBA',
-        'speaker.carlos-gomez.bio': 'TBA (to be added)',
-        
-        'speaker.angela-guzman.affiliation': 'President, Acolfísica',
-        'speaker.angela-guzman.areas': 'Quantum and atomic optics',
-        'speaker.angela-guzman.bio': 'Ángela María Guzmán is an acclaimed Colombian physicist internationally recognized for her contributions to quantum and atomic optics and for her scientific leadership. She is Professor Emerita and a distinguished alumna of the Physics Department at Universidad Nacional de Colombia, where she helped create the doctoral program in Theoretical Physics. She earned her PhD in Physics at Ludwig Maximilian University of Munich (Germany) and completed postdoctoral stays at the Optical Sciences Center of the University ofArizona (USA) and at Georgia Tech Lorraine (France). She served as associate and later senior member of the Abdus Salam International Centre for Theoretical Physics (ICTP) in Trieste and has held leadership roles in international organizations such as Secretary General of the International Commission for Optics (ICO) and Chair of the Trieste System Advisory Group on Optical Sciences and Applications (TSOSA). She is a Fellow of OPTICA for her contributions to quantum optics and for promoting this discipline in developing countries. In Colombia she has led the Colombian Physics Association (Acolfísica) and is a full member of the Colombian Academy of Exact, Physical and Natural Sciences, where she heads the Caribbean Chapter. She also holds a Master in Renewable Energies (Universidad Camilo José Cela – IMF) and a certificate in energy innovation from Stanford University, underscoring her commitment to applied science and sustainable development.',
-        
-        'speaker.cesar-herreno.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.cesar-herreno.areas': 'Plasmonics',
-        'speaker.cesar-herreno.bio': 'César Aurelio Herreño Fierro holds a Physics degree from Universidad Distrital Francisco José de Caldas and a Master and PhD in Physics from Universidad de los Andes. He is currently a full professor at the Faculty of Science and Education at Universidad Distrital, where he leads the Scientific Instrumentation & Didactics Group and co-directs the Optical Characterization Laboratory. His research focuses on material optics, especially nano-structured systems with plasmonic, magneto-optic, and magnetoplasmonic responses and their applications in advanced optical sensors and devices. He has led or co-led projects funded by Minciencias and Universidad Distrital on the design of plasmonic biosensors and the optical characterization of nanomaterials. He is a member of OPTICA and the Colombian Optics Network, and has an extensive publication record in optics and materials journals.',
-        
-        'speaker.luis-jimenez.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.luis-jimenez.areas': 'Quantum Metrology',
-        'speaker.luis-jimenez.bio': 'Luis Camilo Jiménez Borrego is a physicist from Universidad Nacional de Colombia, where he also completed a Master in Physics focused on the preparation and optical and electrical characterization of metal oxide films. He later earned a Master in Education from Pontificia Universidad Javeriana, concentrating on analogical reasoning for teaching and problem solving in physics. A full professor at Pontificia Universidad Javeriana since 1987, he has served as Director of the Thin Films Research Group, Physics Laboratories Coordinator, and Department Chair. His research focuses on materials physics—particularly the fabrication, characterization, and modeling of thin films and semiconductors—scientific instrumentation, and optical spectroscopy in the visible and infrared. He has led numerous projects that design and build experimental systems to study optical, thermal, and electrical properties of materials, including ellipsometry stations, Hall-effect measurement setups, and sputtering deposition systems.',
-        
-        'speaker.alfonso-leyva.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.alfonso-leyva.areas': 'TBA',
-        'speaker.alfonso-leyva.bio': 'TBA (to be added)',
-        
-        'speaker.henry-mendez.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.henry-mendez.areas': "OLED's",
-        'speaker.henry-mendez.bio': 'Henry Alberto Méndez Pinzón is a physicist from Universidad Nacional de Colombia, holds a Master in Physics from the same university, and earned a PhD in Organic Modification of Metal/Semiconductor Contacts from Chemnitz University of Technology (Germany). His academic career unfolds in solid-state physics and materials science with emphasis on surface engineering, organic modification of metal-semiconductor interfaces, and their electronic properties. His research contributes to the UN Sustainable Development Goals, particularly SDG 3 (Good Health and Well-being) and SDG 9 (Industry, Innovation, and Infrastructure). He has participated in interdisciplinary projects spanning physics, engineering, and biotechnology, strengthening the bridge between scientific research and technological applications.',
-        
-        'speaker.edwin-munevar.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.edwin-munevar.areas': 'Neutrons & Cells',
-        'speaker.edwin-munevar.bio': 'Edwin Munévar Espitia graduated in Physics from Universidad Distrital Francisco José de Caldas, earned a Master in Physics from Universidad de los Andes, and obtained a PhD in Physics from The George Washington University (USA), where he also completed a Master of Science and focused his doctoral research on measuring asymmetries in photon beams. His training revolves around nuclear and particle physics, with special interest in photon-induced fission and computational simulations of radiation-matter interaction, complemented by high-performance computing studies at Universidad Técnica Federico Santa María. He is currently a full-time professor at Universidad Distrital, working on intermediate-energy physics, computational physics, photon-induced nuclear fission, and simulations of radiation-matter processes.',
-        
-        'speaker.henry-ortiz.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.henry-ortiz.areas': 'DFT, Solid State & Raman Spectroscopy',
-        'speaker.henry-ortiz.bio': 'Henry Mauricio Ortíz Salamanca is a physicist who graduated from Universidad Nacional de Colombia, earned a Master in Physics from the same institution, and completed a PhD in Nanoscience and Nanotechnology at CINVESTAV-IPN (Mexico). His academic and professional career focuses on studying the physical properties (structural, vibrational, and electronic) of materials and new materials through theoretical computational modeling, ab initio methods, and experimental Raman spectroscopy. In the sensor field he analyzes electron-phonon, magnon-phonon, and plasmon-phonon interactions (in fundamental physics) and implements enhanced and surface-assisted Raman spectroscopy techniques. He has taught and conducted research at several Colombian universities and is currently affiliated with Universidad Distrital Francisco José de Caldas, where he leads projects on new materials, nanotechnology, biophysics, and condensed matter physics. His scientific output includes 15 articles in specialized journals and contributions to five research and outreach projects.',
-        
-        'speaker.olga-ospina.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.olga-ospina.areas': 'Pulmonary Surfactant System',
-        'speaker.olga-ospina.bio': 'Olga Lucía Ospina Ramírez holds a PhD in Biochemistry and Molecular Biology from Universidad Complutense de Madrid (2011), a Master in Biology, and a Physics degree from Pontificia Universidad Javeriana (2004 and 1998, respectively). Her academic career integrates molecular biology, bioengineering, and the physical sciences, promoting interdisciplinary training in biotechnology, industrial microbiology, and pharmaceutical chemistry. Her work contributes to UN SDG 4 (Quality Education) by strengthening academic programs devoted to science education and training professionals in engineering and biosciences. She has contributed to programs in Bioengineering, Biology, Civil Engineering, Electronic Engineering, Industrial Engineering, Mechanical Engineering, Mechatronics Engineering, Systems Engineering, Environmental Science Education, Industrial Microbiology, and Pharmaceutical Chemistry, advancing projects on applied research, sustainability, and technological innovation.',
-        
-        'speaker.german-pabon.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.german-pabon.areas': 'Photosynthesis',
-        'speaker.german-pabon.bio': 'Germán Alexander Pabón Rosas is a physicist from Universidad Nacional de Colombia, where he also earned a Master in Physics, and later completed a PhD in Biophysics and Biochemistry at Johns Hopkins University (USA). His academic and scientific work focuses on studying biological systems from a physics perspective, emphasizing molecular biophysics, structural biochemistry, and the interaction between biomolecules and materials. He has participated in projects linked to academic programs in biology, bioengineering, microbiology, pharmaceutical chemistry, and applied engineering, promoting the integration of physics with the life sciences. His research supports emerging fields such as medical physics and biological modeling, contributing to biotechnology and interdisciplinary research in Colombia.',
-        
-        'speaker.fredie-rojas.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.fredie-rojas.areas': 'Photovoltaic Solar cells',
-        'speaker.fredie-rojas.bio': 'Fredie Rojas Tarazona earned a Physics degree from Pontificia Universidad Javeriana and advanced training at Universidad Nacional de Colombia, where he completed a specialization and a Master in Physics. He later pursued graduate studies at Universitat de Barcelona (Spain), obtaining a PhD in Physics and a Diploma of Advanced Studies in Physics and Materials Science. His research centers on physics and materials science, with emphasis on technologies geared toward affordable, clean energy (SDG 7). He has helped understand and optimize materials for renewable energies, photovoltaic conversion, and optoelectronic devices, bridging fundamental research with sustainable energy needs. He has also contributed to programs in engineering, bioengineering, and mathematics, integrating applied physics with technological innovation and energy sustainability.',
-        
-        'speaker.julian-salamanca.affiliation': 'Universidad Distrital Francisco José de Caldas',
-        'speaker.julian-salamanca.areas': 'Quantum computing',
-        'speaker.julian-salamanca.bio': 'Julián Andrés Salamanca Bernal earned a Physics degree from Universidad Distrital Francisco José de Caldas, a Master in Physics from Universidad de los Andes, and a PhD in Applied Physics from Idaho State University. His academic work has focused on particle and applied physics, including a doctoral dissertation on the coherent photoproduction of phi mesons using polarized light and a master thesis devoted to computing the acceptance of the CLAS detector.',
-        
-        'speaker.andres-vargas.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.andres-vargas.areas': 'Geometric Methods & QM',
-        'speaker.andres-vargas.bio': 'Andrés Vargas Domínguez is a physicist and mathematician from Universidad de los Andes, where he also completed a Master in Mathematics. He later earned a PhD in Mathematics from the University of Bonn (Germany), renowned for its tradition in fundamental research in pure and applied mathematics. He is currently a full professor in the Mathematics Department and leads the Mathematical Physics research group, where he is also an active member. His work focuses on the rigorous study of the mathematical foundations of theoretical physics, especially the geometric and analytic structures underlying contemporary physical models.',
-        
-        'speaker.nelson-velandia.affiliation': 'Pontificia Universidad Javeriana',
-        'speaker.nelson-velandia.areas': 'Black Holes',
-        'speaker.nelson-velandia.bio': 'Nelson Alonso Velandia Heredia S.J. holds degrees in Philosophy, Physics, and Theology from Pontificia Universidad Javeriana, as well as a Master and PhD in Physics from Universidad Nacional de Colombia. His training uniquely combines natural sciences, humanities, and theology, allowing him to bridge scientific reasoning with philosophical and theological reflection. He is part of the study center "El ser humano en el cosmos," an initiative that brings together the faculties of Science, Theology, and Philosophy at Pontificia Universidad Javeriana to explore fundamental questions about the origin of the universe, life, and humanity\'s role in the cosmos. He actively participates in the permanent faculty seminar, the Ortiz-Chardin colloquia, advises the Astrojave student group, contributes to the AstroRed Bogotá network, and teaches the CFT course El ser humano en el cosmos.',
-        
-        'speaker.herbert-vinck.affiliation': 'Universidad Nacional de Colombia - Sistema General de Regalías (SGR)',
-        'speaker.herbert-vinck.areas': 'TBA',
-        'speaker.herbert-vinck.bio': 'TBA (to be added)',
-        
-        'footer.copyright': '© 2025 Quantum Physics Symposium — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas'
+          <div class="card">
+            <h3>John Hernan Diaz Forero</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.john-diaz.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.john-diaz.areas">Física de la Materia Condensada, Estructura Electrónica (DFT), Enseñanza de la Física</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.john-diaz.bio">John Hernan Diaz Forero es Licenciado en Ciencias Física...</p>
+          </div>
+
+          <div class="card">
+            <h3>Carlos Gómez Vasco</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.carlos-gomez.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.carlos-gomez.areas">Plasmónica, Levitación Diamagnética, Ciencia de Datos Aplicada</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.carlos-gomez.bio">Carlos Andrés Gómez Vasco es Licenciado en Física...</p>
+          </div>
+
+          <div class="card">
+            <h3>Ángela María Guzmán</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.angela-guzman.affiliation">Presidenta Acolfísica</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.angela-guzman.areas">Óptica Cuántica, Óptica Atómica, Fotónica</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.angela-guzman.bio">Ángela María Guzmán es una destacada física colombiana...</p>
+          </div>
+
+          <div class="card">
+            <h3>César Aurelio Herreño Fierro</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.cesar-herreno.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.cesar-herreno.areas">Plasmónica, Magneto-óptica, Nanomateriales y Biosensores</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.cesar-herreno.bio">César Aurelio Herreño Fierro es Licenciado en Física...</p>
+          </div>
+
+          <div class="card">
+            <h3>Luis Camilo Jiménez Borrego</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.luis-jimenez.affiliation">Pontificia Universidad Javeriana</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.luis-jimenez.areas">Física de Películas Delgadas, Semiconductores, Espectroscopía Óptica</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.luis-jimenez.bio">Luis Camilo Jiménez Borrego es Físico egresado...</p>
+          </div>
+
+          <div class="card">
+            <h3>J. Alfonso Leyva</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.alfonso-leyva.affiliation">Pontificia Universidad Javeriana</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.alfonso-leyva.areas">TBA</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.alfonso-leyva.bio">TBA (to be added)</p>
+          </div>
+
+          <div class="card">
+            <h3>Henry Alberto Méndez Pinzón</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.henry-mendez.affiliation">Pontificia Universidad Javeriana</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.henry-mendez.areas">Física del Estado Sólido, Interfaces Metal-Semiconductor, Electrónica Orgánica</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.henry-mendez.bio">Henry Alberto Méndez Pinzón es Físico egresado...</p>
+          </div>
+
+          <div class="card">
+            <h3>Edwin Munévar Espitia</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.edwin-munevar.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.edwin-munevar.areas">Física Nuclear, Fisión Inducida por Fotones, Simulación Monte Carlo</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.edwin-munevar.bio">Edwin Munévar Espitia es Licenciado en Física...</p>
+          </div>
+
+          <div class="card">
+            <h3>Henry Mauricio Ortiz Salamanca</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.henry-ortiz.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.henry-ortiz.areas">Propiedades Vibracionales y Electrónicas, Espectroscopía Raman (SERS), Cálculos Ab-initio</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.henry-ortiz.bio">Henry Mauricio Ortíz Salamanca es Físico egresado...</p>
+          </div>
+
+          <div class="card">
+            <h3>Olga Lucía Ospina Ramírez</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.olga-ospina.affiliation">Pontificia Universidad Javeriana</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.olga-ospina.areas">Biofísica Molecular, Bioingeniería, Educación en Biociencias</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.olga-ospina.bio">Olga Lucía Ospina Ramírez es Doctora en Bioquímica...</p>
+          </div>
+
+          <div class="card">
+            <h3>Germán Alexander Pabón Rosas</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.german-pabon.affiliation">Pontificia Universidad Javeriana</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.german-pabon.areas">Biofísica Molecular, Bioquímica Estructural, Interacción Biomolécula-Material</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.german-pabon.bio">Germán Alexander Pabón Rosas es Físico egresado...</p>
+          </div>
+
+          <div class="card">
+            <h3>Fredie Rojas Tarazona</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.fredie-rojas.affiliation">Pontificia Universidad Javeriana</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.fredie-rojas.areas">Materiales para Energías Renovables, Conversión Fotovoltaica, Dispositivos Optoelectrónicos</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.fredie-rojas.bio">Fredie Rojas Tarazona es Licenciado en Física...</p>
+          </div>
+
+          <div class="card">
+            <h3>Julián Andrés Salamanca Bernal</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.julian-salamanca.affiliation">Universidad Distrital Francisco José de Caldas</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.julian-salamanca.areas">Física de Partículas, Fotoproducción de Mesones, Física Experimental de Altas Energías</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.julian-salamanca.bio">Julián Andrés Salamanca Bernal es Licenciado en Física...</p>
+          </div>
+
+          <div class="card">
+            <h3>Andrés Vargas Domínguez</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.andres-vargas.affiliation">Pontificia Universidad Javeriana</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.andres-vargas.areas">Física Matemática, Métodos Geométricos en Física, Fundamentos de la Mecánica Cuántica</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.andres-vargas.bio">Andrés Vargas Domínguez es Físico y Matemático...</p>
+          </div>
+
+          <div class="card">
+            <h3>Nelson Alonso Velandia Heredia</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.nelson-velandia.affiliation">Pontificia Universidad Javeriana</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.nelson-velandia.areas">Cosmología, Relación Ciencia-Fe, Filosofía de la Física</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.nelson-velandia.bio">Nelson Alonso Velandia Heredia S.J. es Licenciado...</p>
+          </div>
+
+          <div class="card">
+            <h3>Herbert Vinck</h3>
+            <p><strong data-i18n="speakers.affiliation-label">Afiliación:</strong> <span data-i18n="speaker.herbert-vinck.affiliation">Universidad Nacional de Colombia - Sistema General de Regalías (SGR)</span></p>
+            <p><strong data-i18n="speakers.research-label">Áreas de investigación:</strong> <span data-i18n="speaker.herbert-vinck.areas">Electrodinámica Cuántica de Cavidades (cQED), Cristales Fotónicos, Óptica Cuántica de Semiconductores</span></p>
+            <p style="margin-top:1rem; color:var(--text-muted);" data-i18n="speaker.herbert-vinck.bio">Herbert Vinck Posada es un investigador...</p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr style="border:none; border-top:1px solid #1d2745; margin-bottom:1rem;">
+      <p data-i18n="footer.copyright">© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas</p>
+      <p data-i18n="footer.developed">Desarrollado por el Comité de Organización</p>
+    </footer>
+
+    <script>
+      // Language translations
+      const translations = {
+        es: {
+          'nav.brand': 'Simposio Física Cuántica',
+          'nav.about': 'Acerca del Simposio',
+          'nav.guests': 'Invitados',
+          'nav.program': 'Programa',
+          'nav.register': 'Registro',
+          'nav.location': 'Lugar',
+          'nav.committee': 'Comité',
+          'nav.contact': 'Contacto',
+          'footer.developed': 'Desarrollado por el Comité de Organización',
+          'speakers.title': 'Ponentes',
+          'speakers.intro': 'Conoce a nuestros ponentes que compartirán sus investigaciones y conocimientos en el Simposio de Física Cuántica 2025. (Por orden alfabético)',
+          'speakers.affiliation-label': 'Afiliación:',
+          'speakers.research-label': 'Áreas de investigación:',
+
+          'speaker.david-berenstein.affiliation': 'University of California, Santa Barbara',
+          'speaker.david-berenstein.areas': 'Teoría de cuerdas, Correspondencia AdS/CFT, Integrabilidad',
+          'speaker.david-berenstein.bio': 'David Berenstein es un físico teórico formado en la Universidad Nacional de Colombia y doctorado en la Universidad de Texas en Austin (1998) bajo la supervisión de Willy Fischler, uno de los impulsores del formalismo de la teoría matricial. Actualmente es profesor en la Universidad de California, Santa Bárbara, donde desarrolla su labor académica e investigativa. Su campo de trabajo se centra en la teoría de cuerdas y sus conexiones con las teorías cuánticas de campos, área en la que ha realizado aportes ampliamente reconocidos. Ha contribuido de manera destacada al desarrollo de la correspondencia AdS/CFT, particularmente mediante estudios que relacionan cuerdas abiertas, gravitones gigantes e integrabilidad en teorías supersimétricas. Entre sus publicaciones relevantes se encuentra "A study of open strings ending on giant gravitons, spin chains and integrability" (2006), realizada en colaboración con Diego H. Correa y Samuel E. Vázquez.',
+
+          'speaker.reinaldo-bernal.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.reinaldo-bernal.areas': 'TBA',
+          'speaker.reinaldo-bernal.bio': 'TBA (to be added)',
+
+          'speaker.maria-castellanos.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.maria-castellanos.areas': 'Física Médica, Dosimetría Clínica, Protección Radiológica',
+          'speaker.maria-castellanos.bio': 'Física,  DSc en física radiológica y médica, con amplia trayectoria en las áreas de radioterapia y radiología en instituciones especializadas en el tratamiento y control del cáncer. Líder del proyecto de creación de la Maestría en Física Médica de la Pontificia Universidad Javeriana en la cual se desempeña actualmente como docente. Ha colaborado con el Organismo Internacional de la Energía Atómica (OIEA) como experta internacional en múltiples misiones en el campo de la dosimetría y la física médica, así como en el control regulatorio del uso de la energía nuclear.',
+
+          'speaker.john-diaz.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.john-diaz.areas': 'Física de la Materia Condensada, Estructura Electrónica (DFT), Enseñanza de la Física',
+          'speaker.john-diaz.bio': 'John Hernan Diaz Forero es Licenciado en Ciencias Física egresado de la Universidad Distrital Francisco José de Caldas, con Especialización en Ciencias Física (Universidad Nacional de Colombia) y Maestría en Ciencias - Física (Universidad Nacional de Colombia); además es Doctorado en Ingeniería en la Universidad Distrital. Su trayectoria académica y profesional se ha orientado al estudio de la física de la materia condensada, la física atómica y la ingeniería de materiales, enfocándose en las propiedades estructurales y electrónicas de los materiales mediante técnicas de simulación computacional y métodos ab initio (DFT); igualmente, mantiene una línea de investigación en la enseñanza de la física. Ha sido docente en varias universidades colombianas, como la Fundación Universidad de América y la Fundación Universitaria Los Libertadores, y actualmente está vinculado como docente e investigador a la Universidad Distrital Francisco José de Caldas, donde desarrolla proyectos en simulación de sistemas físicos y se ha desempeñado como Coordinador del Programa Académico de Física. En cuanto a su producción científica, el profesor cuenta con 35 artículos publicados en revistas especializadas.',
+
+          'speaker.carlos-gomez.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.carlos-gomez.areas': 'Plasmónica, Levitación Diamagnética, Ciencia de Datos Aplicada',
+          'speaker.carlos-gomez.bio': 'Carlos Andrés Gómez Vasco es Licenciado en Física egresado de la Universidad Distrital Francisco José de Caldas, con Maestría en Física (Universidad Nacional de Colombia) y Maestría en Ciencia de Datos (Pontificia Universidad Javeriana - Sede Cali); además, cursa estudios de Ingeniería de Sistemas en la Corporación Unificada Nacional de Educación Superior CUN. Su trayectoria académica y profesional se ha orientado al estudio de la física, la enseñanza y la ciencia de datos, con énfasis en áreas como óptica, plasmones de superficie, levitación diamagnética y la aplicación de técnicas de Machine Learning; igualmente, mantiene líneas de investigación activas en la enseñanza de la física. Ha sido docente en numerosas universidades colombianas y actualmente está vinculado como docente a la Universidad Distrital Francisco José de Caldas.',
+
+          'speaker.angela-guzman.affiliation': 'Presidenta Acolfísica',
+          'speaker.angela-guzman.areas': 'Óptica Cuántica, Óptica Atómica, Fotónica',
+          'speaker.angela-guzman.bio': 'Ángela María Guzmán es una destacada física colombiana reconocida internacionalmente por sus aportes a la óptica cuántica y atómica, así como por su liderazgo científico. Es Profesora Emérita y egresada distinguida del Departamento de Física de la Universidad Nacional de Colombia, institución donde contribuyó a la creación del programa de doctorado en Física Teórica. Obtuvo su PhD en Física en la Universidad Ludwig Maximilian de Múnich (Alemania) y realizó estancias postdoctorales en el Optical Sciences Center de la Universidad de Arizona (EE. UU.) y en Georgia Tech Lorraine (Francia). Fue miembro asociado y luego miembro senior del Centro Internacional Abdus Salam de Física Teórica (ICTP) en Trieste, y ha ocupado cargos de relevancia en organismos internacionales como Secretaria General de la Comisión Internacional de Óptica (ICO) y Presidenta del Grupo Asesor del Sistema Trieste en Ciencias y Aplicaciones Ópticas (TSOSA). Es Fellow de la sociedad internacional OPTICA, reconocimiento otorgado por sus contribuciones a la óptica cuántica y por la promoción de esta disciplina en países en desarrollo. En Colombia, se ha desempeñado como Presidenta de la Asociación Colombiana de Física (Acolfísica) y es miembro de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales. Posee también una maestría en Energías Renovables (Universidad Camilo José Cela – IMF) y un diplomado en innovación energética de la Universidad de Stanford, reafirmando su compromiso con la ciencia aplicada y el desarrollo sostenible.',
+
+          'speaker.cesar-herreno.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.cesar-herreno.areas': 'Plasmónica, Magneto-óptica, Nanomateriales y Biosensores',
+          'speaker.cesar-herreno.bio': 'César Aurelio Herreño Fierro es Licenciado en Física por la Universidad Distrital Francisco José de Caldas, Magíster y Doctor en Ciencias–Física por la Universidad de los Andes. Actualmente se desempeña como Profesor Titular de la Facultad de Ciencias y Educación de la Universidad Distrital Francisco José de Caldas, donde lidera el Grupo de Instrumentación Científica & Didáctica y co-dirige el Laboratorio de Caracterización Óptica. Su labor investigativa se centra en el estudio de la óptica de materiales, particularmente en sistemas nanoestructurados con respuesta plasmónica, magnetoóptica y magnetoplasmónica, y sus aplicaciones en el desarrollo de sensores y dispositivos ópticos avanzados. Ha participado como investigador principal o co-líder en diversos proyectos financiados por Minciencias y la Universidad Distrital, orientados al diseño de biosensores plasmónicos y a la caracterización óptica de nanomateriales. Es miembro de la Sociedad Americana de Óptica (OPTICA) y de la Red Colombiana de Óptica, y cuenta con una destacada producción científica en revistas especializadas en óptica y materiales.',
+
+          'speaker.luis-jimenez.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.luis-jimenez.areas': 'Física de Películas Delgadas, Semiconductores, Espectroscopía Óptica',
+          'speaker.luis-jimenez.bio': 'Luis Camilo Jiménez Borrego es Físico egresado de la Universidad Nacional de Colombia, donde también obtuvo el título de Magíster en Física con una investigación sobre la preparación y caracterización óptica y eléctrica de películas de óxidos metálicos. Posteriormente, obtuvo la Maestría en Educación en la Pontificia Universidad Javeriana, enfocando su trabajo en el razonamiento analógico aplicado a la enseñanza y resolución de problemas en física. Profesor titular de la Pontificia Universidad Javeriana desde 1987, ha desarrollado una destacada labor académica y administrativa como Director del Grupo de Investigación en Películas Delgadas, Coordinador de Laboratorios de Física y Jefe de Departamento. Su experiencia investigativa se centra en la física de materiales, particularmente en la elaboración, caracterización y modelado de películas delgadas y semiconductores, la instrumentación científica y la espectroscopía óptica en el visible e infrarrojo. Ha liderado múltiples proyectos de diseño y construcción de sistemas experimentales para el estudio de propiedades ópticas, térmicas y eléctricas de materiales, incluyendo estaciones de elipsometría, bancos de medición de efecto Hall y sistemas de deposición por sputtering.',
+
+          'speaker.alfonso-leyva.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.alfonso-leyva.areas': 'TBA',
+          'speaker.alfonso-leyva.bio': 'TBA (to be added)',
+
+          'speaker.henry-mendez.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.henry-mendez.areas': 'Física del Estado Sólido, Interfaces Metal-Semiconductor, Electrónica Orgánica',
+          'speaker.henry-mendez.bio': 'Henry Alberto Méndez Pinzón es Físico egresado de la Universidad Nacional de Colombia, con Maestría en Ciencias Físicas en la misma institución y Doctorado en Organic Modification of Metal/Semiconductor Contacts otorgado por la Chemnitz University of Technology (Alemania). Su trayectoria académica y profesional se ha desarrollado en el campo de la física del estado sólido y la ciencia de materiales, con especial énfasis en la ingeniería de superficies, la modificación orgánica de interfaces metal-semiconductor y el estudio de sus propiedades electrónicas. Su trabajo de investigación ha contribuido al desarrollo de materiales avanzados y tecnologías innovadoras, vinculándose directamente con los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas, en particular con el ODS 3 (Salud y bienestar) y el ODS 9 (Industria, innovación e infraestructura). Además, ha participado en proyectos interdisciplinarios que integran la física, la ingeniería y la biotecnología, fortaleciendo el vínculo entre la investigación científica y la aplicación tecnológica.',
+
+          'speaker.edwin-munevar.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.edwin-munevar.areas': 'Física Nuclear, Fisión Inducida por Fotones, Simulación Monte Carlo',
+          'speaker.edwin-munevar.bio': 'Edwin Munévar Espitia es Licenciado en Física egresado de la Universidad Distrital Francisco José de Caldas, Magíster en Ciencias–Física por la Universidad de los Andes y Doctor en Física por The George Washington University (Estados Unidos), institución en la que también obtuvo el título de Master of Science y desarrolló su investigación doctoral sobre la medición de asimetrías en haces de fotones. Su formación ha estado centrada en la física nuclear y de partículas, con especial interés en la fisión inducida por fotones y en la simulación computacional de la interacción radiación-materia. Ha complementado su trayectoria con formación en computación de alto rendimiento (Universidad Técnica Federico Santa María). Actualmente es profesor de planta en la Universidad Distrital Francisco José de Caldas, sus líneas de investigación activas incluyen la física de energías intermedias, la física computacional, la fisión nuclear inducida por fotones y la simulación de procesos de interacción radiación-materia.',
+
+          'speaker.henry-ortiz.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.henry-ortiz.areas': 'Propiedades Vibracionales y Electrónicas, Espectroscopía Raman (SERS), Cálculos Ab-initio',
+          'speaker.henry-ortiz.bio': 'Henry Mauricio Ortíz Salamanca es Físico egresado de la Universidad Nacional de Colombia, con Maestría en Física (Universidad Nacional de Colombia) y Doctorado en Nanociencia y Nanotecnología en el CINVESTAV-IPN (México). Su trayectoria académica y profesional se ha orientado al estudio de las propiedades físicas (estructurales, vibracionales y electrónicas) de materiales y nuevos materiales, mediante técnicas de modelación teórica computacional, ab-initio, y experimental, espectroscopía Raman; igualmente, en el área de los sensores está el estudio de la interacción electrón-fonon, magnón fonon y plasmón-fonon (en física fundamental) y experimentalmente en la implementación de la técnica de espectroscopía Raman mejorada y aumentada. Ha sido docente e investigador en varias universidades colombianas y actualmente está vinculado a la Universidad Distrital Francisco José de Caldas, donde desarrolla proyectos en nuevos materiales, nanotecnología, biofísica y física de la materia condensada. En cuanto a su producción científica, el profesor cuenta con 15 artículos publicados en revistas especializadas y 5 a proyectos de investigación y extensión.',
+
+          'speaker.olga-ospina.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.olga-ospina.areas': 'Biofísica Molecular, Bioingeniería, Educación en Biociencias',
+          'speaker.olga-ospina.bio': 'Olga Lucía Ospina Ramírez es Doctora en Bioquímica y Biología Molecular por la Universidad Complutense de Madrid (2011), Magíster en Biología y Licenciada en Física por la Pontificia Universidad Javeriana (2004 y 1998, respectivamente). Su trayectoria académica se ha caracterizado por la integración de la biología molecular, la bioingeniería y las ciencias físicas, promoviendo la formación interdisciplinaria en áreas como la biotecnología, la microbiología industrial y la química farmacéutica. Su trabajo contribuye al cumplimiento del ODS 4 (Educación de calidad) de las Naciones Unidas, mediante la dirección y fortalecimiento de programas académicos orientados a la enseñanza de las ciencias naturales y la formación de profesionales en ingeniería y biociencias. Ha estado vinculada a programas de Bioingeniería, Biología, Ingeniería Civil, Ingeniería Electrónica, Ingeniería Industrial, Ingeniería Mecánica, Ingeniería Mecatrónica, Ingeniería de Sistemas, Licenciatura en Ciencias Naturales y Educación Ambiental, Microbiología Industrial y Química Farmacéutica, impulsando proyectos que promueven la investigación aplicada, la sostenibilidad y la innovación tecnológica.',
+
+          'speaker.german-pabon.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.german-pabon.areas': 'Biofísica Molecular, Bioquímica Estructural, Interacción Biomolécula-Material',
+          'speaker.german-pabon.bio': 'Germán Alexander Pabón Rosas es Físico egresado de la Universidad Nacional de Colombia, donde también obtuvo el título de Magíster en Ciencias Físicas. Posteriormente realizó el Doctorado en Biofísica y Bioquímica Biofísica en la Johns Hopkins University (Estados Unidos), consolidando una trayectoria interdisciplinaria entre la física y las ciencias biomédicas. Su labor académica y científica se orienta al estudio de sistemas biológicos desde la perspectiva de la física, con énfasis en la biofísica molecular, la bioquímica estructural y la interacción entre biomoléculas y materiales. Ha participado en proyectos vinculados a programas académicos de biología, bioingeniería, microbiología, química farmacéutica e ingenierías aplicadas, promoviendo la integración de la física con las ciencias de la vida. Su enfoque investigativo contribuye al fortalecimiento de áreas emergentes como la física médica y la modelación biológica, aportando al desarrollo de la biotecnología y la investigación interdisciplinaria en Colombia.',
+
+          'speaker.fredie-rojas.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.fredie-rojas.areas': 'Materiales para Energías Renovables, Conversión Fotovoltaica, Dispositivos Optoelectrónicos',
+          'speaker.fredie-rojas.bio': 'Fredie Rojas Tarazona es Licenciado en Física de la Pontificia Universidad Javeriana, con formación avanzada en la Universidad Nacional de Colombia, donde obtuvo los títulos de Especialista y Magíster en Ciencias Físicas. Posteriormente cursó estudios de posgrado en la Universitat de Barcelona (España), donde alcanzó el Doctorado en Física y el Diploma de Estudios Avanzados en Física y Ciencia de Materiales. Su labor investigativa se centra en la física y ciencia de materiales, con especial interés en el desarrollo de tecnologías orientadas a la energía asequible y no contaminante (ODS 7). Ha contribuido a la comprensión y optimización de materiales con aplicaciones en energías renovables, conversión fotovoltaica y dispositivos optoelectrónicos, promoviendo la vinculación entre la investigación fundamental y las necesidades energéticas sostenibles. Asimismo, ha participado en programas académicos vinculados a la ingeniería, la bioingeniería y las matemáticas, consolidando una trayectoria interdisciplinaria que integra la física aplicada con la innovación tecnológica y la sostenibilidad energética.',
+
+          'speaker.julian-salamanca.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.julian-salamanca.areas': 'Física de Partículas, Fotoproducción de Mesones, Física Experimental de Altas Energías',
+          'speaker.julian-salamanca.bio': 'Julián Andrés Salamanca Bernal es Licenciado en Física egresado de la Universidad Distrital Francisco José de Caldas, con Maestría en Ciencias - Física de la Universidad de los Andes y PhD en Física Aplicada de Idaho State University. Su trayectoria académica se ha enfocado en la física de partículas y la física aplicada, con una tesis doctoral centrada en la fotoproducción coherente de mesones phi usando luz polarizada y una tesis de maestría enfocada en el cálculo de la aceptancia del detector CLAS.',
+
+          'speaker.andres-vargas.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.andres-vargas.areas': 'Física Matemática, Métodos Geométricos en Física, Fundamentos de la Mecánica Cuántica',
+          'speaker.andres-vargas.bio': 'Andrés Vargas Domínguez es Físico y Matemático egresado de la Universidad de los Andes, donde también obtuvo el título de Magíster en Matemáticas. Posteriormente, obtuvo su Doctorado en Matemáticas en la Universidad de Bonn (Alemania), institución reconocida por su tradición en investigación fundamental en matemáticas puras y aplicadas. Actualmente, se desempeña como Profesor Titular del Departamento de Matemáticas y líder del grupo de investigación en Física Matemática, del cual también es miembro activo. Su labor académica se ha orientado al estudio riguroso de los fundamentos matemáticos de la física teórica, con especial interés en las estructuras geométricas y analíticas que subyacen en los modelos físicos contemporáneos.',
+
+          'speaker.nelson-velandia.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.nelson-velandia.areas': 'Cosmología, Relación Ciencia-Fe, Filosofía de la Física',
+          'speaker.nelson-velandia.bio': 'Nelson Alonso Velandia Heredia S.J. es Licenciado en Filosofía, Licenciado en Física y Profesional en Teología por la Pontificia Universidad Javeriana. Es además Magíster y Doctor en Ciencias – Física por la Universidad Nacional de Colombia. Su formación integra de manera singular las ciencias naturales, las humanidades y la teología, permitiéndole abordar el conocimiento desde una perspectiva transdisciplinar que busca tender puentes entre la razón científica y la reflexión filosófico-teológica. Actualmente, está vinculado al centro de estudios "El ser humano en el cosmos", una iniciativa que reúne a las facultades de Ciencias, Teología y Filosofía de la Pontificia Universidad Javeriana con el propósito de explorar las grandes preguntas sobre el origen del universo, la vida y el papel de la humanidad en el cosmos. Desde este espacio, participa activamente en el seminario permanente de profesores, los coloquios Ortiz-Chardin, la asesoría del grupo estudiantil Astrojave, la AstroRed Bogotá y la cátedra del CFT: El ser humano en el cosmos.',
+
+          'speaker.herbert-vinck.affiliation': 'Universidad Nacional de Colombia - Sistema General de Regalías (SGR)',
+          'speaker.herbert-vinck.areas': 'Electrodinámica Cuántica de Cavidades (cQED), Cristales Fotónicos, Óptica Cuántica de Semiconductores',
+          'speaker.herbert-vinck.bio': 'Herbert Vinck Posada es un investigador y docente especializado en electrodinámica cuántica de cavidades y cristales fotónicos. Es PhD en Física por la Universidad de Antioquia, donde obtuvo la distinción Summa Cum Laude bajo la dirección de Augusto González y la codirección de Boris Rodríguez. Durante su formación doctoral realizó una estancia en la Universidad de Sheffield (Inglaterra), trabajando con David Whittaker en fenómenos de acoplamiento radiación-materia en puntos cuánticos embebidos en micropilares. Estos estudios derivaron en publicaciones en revistas de alto impacto como Physical Review Letters, Applied Physics Letters y Journal of Modern Physics.',
+
+          'footer.copyright': '© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas'
+        },
+        en: {
+          'nav.brand': 'Quantum Physics Symposium',
+          'nav.about': 'About the Symposium',
+          'nav.guests': 'Guests',
+          'nav.program': 'Program',
+          'nav.register': 'Registration',
+          'nav.location': 'Location',
+          'nav.committee': 'Committee',
+          'nav.contact': 'Contact',
+          'footer.developed': 'Developed by the Organizing Committee',
+          'speakers.title': 'Speakers',
+          'speakers.intro': 'Meet the speakers who will share their research and insights during the Quantum Physics Symposium 2025. (By alphabetical order)',
+          'speakers.affiliation-label': 'Affiliation:',
+          'speakers.research-label': 'Research areas:',
+
+          'speaker.david-berenstein.affiliation': 'University of California, Santa Barbara',
+          'speaker.david-berenstein.areas': 'String Theory, AdS/CFT Correspondence, Integrability',
+          'speaker.david-berenstein.bio': 'David Berenstein is a theoretical physicist trained at the Universidad Nacional de Colombia, holding a PhD from the University of Texas at Austin (1998) under the supervision of Willy Fischler, a pioneer of matrix theory formalism. Currently a professor at the University of California, Santa Barbara, his work focuses on string theory and its connections to quantum field theories. He has made significant contributions to the AdS/CFT correspondence, particularly regarding open strings, giant gravitons, and integrability in supersymmetric theories. Notable publications include "A study of open strings ending on giant gravitons, spin chains and integrability" (2006), co-authored with Diego H. Correa and Samuel E. Vázquez.',
+
+          'speaker.reinaldo-bernal.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.reinaldo-bernal.areas': 'TBA',
+          'speaker.reinaldo-bernal.bio': 'TBA (to be added)',
+
+          'speaker.maria-castellanos.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.maria-castellanos.areas': 'Medical Physics, Clinical Dosimetry, Radiation Protection',
+          'speaker.maria-castellanos.bio': 'Physicist, DSc in radiological and medical physics, with extensive experience in the areas of radiotherapy and radiology in institutions specialized in cancer treatment and control. Leader of the project to create the Master\'s program in Medical Physics at Pontificia Universidad Javeriana, where she currently works as a professor. She has collaborated with the International Atomic Energy Agency (IAEA) as an international expert on multiple missions in the field of dosimetry and medical physics, as well as in the regulatory control of the use of nuclear energy.',
+
+          'speaker.john-diaz.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.john-diaz.areas': 'Condensed Matter Physics, Electronic Structure (DFT), Physics Education',
+          'speaker.john-diaz.bio': 'John Hernan Diaz Forero holds a degree in Physics Education from Universidad Distrital Francisco José de Caldas, a specialization in Physics Science, and a Master in Physics from Universidad Nacional de Colombia, as well as a PhD in Engineering from Universidad Distrital. His work centers on condensed matter physics, atomic physics, and materials engineering, focusing on the structural and electronic properties of materials through computational simulations and ab initio (DFT) methods, while also maintaining a research line on physics education. He has been a faculty member at several Colombian institutions such as Fundación Universidad de América and Fundación Universitaria Los Libertadores, and now teaches and researches at Universidad Distrital Francisco José de Caldas, where he leads projects on physical system simulations and has served as Academic Program Coordinator for Physics. His publication record includes 35 peer-reviewed articles.',
+
+          'speaker.carlos-gomez.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.carlos-gomez.areas': 'Plasmonics, Diamagnetic Levitation, Applied Data Science',
+          'speaker.carlos-gomez.bio': 'Carlos Andrés Gómez Vasco holds a degree in Physics Education from Universidad Distrital Francisco José de Caldas, a Master in Physics (Universidad Nacional de Colombia), and a Master in Data Science (Pontificia Universidad Javeriana - Cali). He is also currently pursuing Systems Engineering at CUN. His academic and professional career focuses on physics, education, and data science, emphasizing optics, surface plasmons, diamagnetic levitation, and Machine Learning applications. He maintains active research lines in physics education and has taught at various Colombian universities; he is currently a faculty member at Universidad Distrital Francisco José de Caldas.',
+
+          'speaker.angela-guzman.affiliation': 'President, Acolfísica',
+          'speaker.angela-guzman.areas': 'Quantum Optics, Atomic Optics, Photonics',
+          'speaker.angela-guzman.bio': 'Ángela María Guzmán is an acclaimed Colombian physicist internationally recognized for her contributions to quantum and atomic optics and for her scientific leadership. She is Professor Emerita and a distinguished alumna of the Physics Department at Universidad Nacional de Colombia, where she helped create the doctoral program in Theoretical Physics. She earned her PhD in Physics at Ludwig Maximilian University of Munich (Germany) and completed postdoctoral stays at the Optical Sciences Center of the University ofArizona (USA) and at Georgia Tech Lorraine (France). She served as associate and later senior member of the Abdus Salam International Centre for Theoretical Physics (ICTP) in Trieste and has held leadership roles in international organizations such as Secretary General of the International Commission for Optics (ICO) and Chair of the Trieste System Advisory Group on Optical Sciences and Applications (TSOSA). She is a Fellow of OPTICA for her contributions to quantum optics and for promoting this discipline in developing countries. In Colombia she has led the Colombian Physics Association (Acolfísica) and is a full member of the Colombian Academy of Exact, Physical and Natural Sciences, where she heads the Caribbean Chapter. She also holds a Master in Renewable Energies (Universidad Camilo José Cela – IMF) and a certificate in energy innovation from Stanford University, underscoring her commitment to applied science and sustainable development.',
+
+          'speaker.cesar-herreno.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.cesar-herreno.areas': 'Plasmonics, Magneto-optics, Nanomaterials & Biosensors',
+          'speaker.cesar-herreno.bio': 'César Aurelio Herreño Fierro holds a Physics degree from Universidad Distrital Francisco José de Caldas and a Master and PhD in Physics from Universidad de los Andes. He is currently a full professor at the Faculty of Science and Education at Universidad Distrital, where he leads the Scientific Instrumentation & Didactics Group and co-directs the Optical Characterization Laboratory. His research focuses on material optics, especially nano-structured systems with plasmonic, magneto-optic, and magnetoplasmonic responses and their applications in advanced optical sensors and devices. He has led or co-led projects funded by Minciencias and Universidad Distrital on the design of plasmonic biosensors and the optical characterization of nanomaterials. He is a member of OPTICA and the Colombian Optics Network, and has an extensive publication record in optics and materials journals.',
+
+          'speaker.luis-jimenez.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.luis-jimenez.areas': 'Thin Film Physics, Semiconductors, Optical Spectroscopy',
+          'speaker.luis-jimenez.bio': 'Luis Camilo Jiménez Borrego is a physicist from Universidad Nacional de Colombia, where he also completed a Master in Physics focused on the preparation and optical and electrical characterization of metal oxide films. He later earned a Master in Education from Pontificia Universidad Javeriana, concentrating on analogical reasoning for teaching and problem solving in physics. A full professor at Pontificia Universidad Javeriana since 1987, he has served as Director of the Thin Films Research Group, Physics Laboratories Coordinator, and Department Chair. His research focuses on materials physics—particularly the fabrication, characterization, and modeling of thin films and semiconductors—scientific instrumentation, and optical spectroscopy in the visible and infrared. He has led numerous projects that design and build experimental systems to study optical, thermal, and electrical properties of materials, including ellipsometry stations, Hall-effect measurement setups, and sputtering deposition systems.',
+
+          'speaker.alfonso-leyva.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.alfonso-leyva.areas': 'TBA',
+          'speaker.alfonso-leyva.bio': 'TBA (to be added)',
+
+          'speaker.henry-mendez.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.henry-mendez.areas': 'Solid State Physics, Metal-Semiconductor Interfaces, Organic Electronics',
+          'speaker.henry-mendez.bio': 'Henry Alberto Méndez Pinzón is a physicist from Universidad Nacional de Colombia, holds a Master in Physics from the same university, and earned a PhD in Organic Modification of Metal/Semiconductor Contacts from Chemnitz University of Technology (Germany). His academic career unfolds in solid-state physics and materials science with emphasis on surface engineering, organic modification of metal-semiconductor interfaces, and their electronic properties. His research contributes to the UN Sustainable Development Goals, particularly SDG 3 (Good Health and Well-being) and SDG 9 (Industry, Innovation, and Infrastructure). He has participated in interdisciplinary projects spanning physics, engineering, and biotechnology, strengthening the bridge between scientific research and technological applications.',
+
+          'speaker.edwin-munevar.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.edwin-munevar.areas': 'Nuclear Physics, Photon-Induced Fission, Monte Carlo Simulation',
+          'speaker.edwin-munevar.bio': 'Edwin Munévar Espitia graduated in Physics from Universidad Distrital Francisco José de Caldas, earned a Master in Physics from Universidad de los Andes, and obtained a PhD in Physics from The George Washington University (USA), where he also completed a Master of Science and focused his doctoral research on measuring asymmetries in photon beams. His training revolves around nuclear and particle physics, with special interest in photon-induced fission and computational simulations of radiation-matter interaction, complemented by high-performance computing studies at Universidad Técnica Federico Santa María. He is currently a full-time professor at Universidad Distrital, working on intermediate-energy physics, computational physics, photon-induced nuclear fission, and simulations of radiation-matter processes.',
+
+          'speaker.henry-ortiz.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.henry-ortiz.areas': 'Vibrational and Electronic Properties, Raman Spectroscopy (SERS), Ab-initio Calculations',
+          'speaker.henry-ortiz.bio': 'Henry Mauricio Ortíz Salamanca is a physicist who graduated from Universidad Nacional de Colombia, earned a Master in Physics from the same institution, and completed a PhD in Nanoscience and Nanotechnology at CINVESTAV-IPN (Mexico). His academic and professional career focuses on studying the physical properties (structural, vibrational, and electronic) of materials and new materials through theoretical computational modeling, ab initio methods, and experimental Raman spectroscopy. In the sensor field he analyzes electron-phonon, magnon-phonon, and plasmon-phonon interactions (in fundamental physics) and implements enhanced and surface-assisted Raman spectroscopy techniques. He has taught and conducted research at several Colombian universities and is currently affiliated with Universidad Distrital Francisco José de Caldas, where he leads projects on new materials, nanotechnology, biophysics, and condensed matter physics. His scientific output includes 15 articles in specialized journals and contributions to five research and outreach projects.',
+
+          'speaker.olga-ospina.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.olga-ospina.areas': 'Molecular Biophysics, Bioengineering, Bioscience Education',
+          'speaker.olga-ospina.bio': 'Olga Lucía Ospina Ramírez holds a PhD in Biochemistry and Molecular Biology from Universidad Complutense de Madrid (2011), a Master in Biology, and a Physics degree from Pontificia Universidad Javeriana (2004 and 1998, respectively). Her academic career integrates molecular biology, bioengineering, and the physical sciences, promoting interdisciplinary training in biotechnology, industrial microbiology, and pharmaceutical chemistry. Her work contributes to UN SDG 4 (Quality Education) by strengthening academic programs devoted to science education and training professionals in engineering and biosciences. She has contributed to programs in Bioengineering, Biology, Civil Engineering, Electronic Engineering, Industrial Engineering, Mechanical Engineering, Mechatronics Engineering, Systems Engineering, Environmental Science Education, Industrial Microbiology, and Pharmaceutical Chemistry, advancing projects on applied research, sustainability, and technological innovation.',
+
+          'speaker.german-pabon.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.german-pabon.areas': 'Molecular Biophysics, Structural Biochemistry, Biomolecule-Material Interaction',
+          'speaker.german-pabon.bio': 'Germán Alexander Pabón Rosas is a physicist from Universidad Nacional de Colombia, where he also earned a Master in Physics, and later completed a PhD in Biophysics and Biochemistry at Johns Hopkins University (USA). His academic and scientific work focuses on studying biological systems from a physics perspective, emphasizing molecular biophysics, structural biochemistry, and the interaction between biomolecules and materials. He has participated in projects linked to academic programs in biology, bioengineering, microbiology, pharmaceutical chemistry, and applied engineering, promoting the integration of physics with the life sciences. His research supports emerging fields such as medical physics and biological modeling, contributing to biotechnology and interdisciplinary research in Colombia.',
+
+          'speaker.fredie-rojas.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.fredie-rojas.areas': 'Renewable Energy Materials, Photovoltaic Conversion, Optoelectronic Devices',
+          'speaker.fredie-rojas.bio': 'Fredie Rojas Tarazona earned a Physics degree from Pontificia Universidad Javeriana and advanced training at Universidad Nacional de Colombia, where he completed a specialization and a Master in Physics. He later pursued graduate studies at Universitat de Barcelona (Spain), obtaining a PhD in Physics and a Diploma of Advanced Studies in Physics and Materials Science. His research centers on physics and materials science, with emphasis on technologies geared toward affordable, clean energy (SDG 7). He has helped understand and optimize materials for renewable energies, photovoltaic conversion, and optoelectronic devices, bridging fundamental research with sustainable energy needs. He has also contributed to programs in engineering, bioengineering, and mathematics, integrating applied physics with technological innovation and energy sustainability.',
+
+          'speaker.julian-salamanca.affiliation': 'Universidad Distrital Francisco José de Caldas',
+          'speaker.julian-salamanca.areas': 'Particle Physics, Meson Photoproduction, Experimental High-Energy Physics',
+          'speaker.julian-salamanca.bio': 'Julián Andrés Salamanca Bernal earned a Physics degree from Universidad Distrital Francisco José de Caldas, a Master in Physics from Universidad de los Andes, and a PhD in Applied Physics from Idaho State University. His academic work has focused on particle and applied physics, including a doctoral dissertation on the coherent photoproduction of phi mesons using polarized light and a master thesis devoted to computing the acceptance of the CLAS detector.',
+
+          'speaker.andres-vargas.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.andres-vargas.areas': 'Mathematical Physics, Geometric Methods in Physics, Foundations of Quantum Mechanics',
+          'speaker.andres-vargas.bio': 'Andrés Vargas Domínguez is a physicist and mathematician from Universidad de los Andes, where he also completed a Master in Mathematics. He later earned a PhD in Mathematics from the University of Bonn (Germany), renowned for its tradition in fundamental research in pure and applied mathematics. He is currently a full professor in the Mathematics Department and leads the Mathematical Physics research group, where he is also an active member. His work focuses on the rigorous study of the mathematical foundations of theoretical physics, especially the geometric and analytic structures underlying contemporary physical models.',
+
+          'speaker.nelson-velandia.affiliation': 'Pontificia Universidad Javeriana',
+          'speaker.nelson-velandia.areas': 'Cosmology, Science-Faith Relationship, Philosophy of Physics',
+          'speaker.nelson-velandia.bio': 'Nelson Alonso Velandia Heredia S.J. holds degrees in Philosophy, Physics, and Theology from Pontificia Universidad Javeriana, as well as a Master and PhD in Physics from Universidad Nacional de Colombia. His training uniquely combines natural sciences, humanities, and theology, allowing him to bridge scientific reasoning with philosophical and theological reflection. He is part of the study center "El ser humano en el cosmos," an initiative that brings together the faculties of Science, Theology, and Philosophy at Pontificia Universidad Javeriana to explore fundamental questions about the origin of the universe, life, and humanity\'s role in the cosmos. He actively participates in the permanent faculty seminar, the Ortiz-Chardin colloquia, advises the Astrojave student group, contributes to the AstroRed Bogotá network, and teaches the CFT course El ser humano en el cosmos.',
+
+          'speaker.herbert-vinck.affiliation': 'Universidad Nacional de Colombia - General Royalties System (SGR)',
+          'speaker.herbert-vinck.areas': 'Cavity Quantum Electrodynamics (cQED), Photonic Crystals, Semiconductor Quantum Optics',
+          'speaker.herbert-vinck.bio': 'Herbert Vinck Posada is a researcher and professor specializing in cavity quantum electrodynamics and photonic crystals. He holds a PhD in Physics from Universidad de Antioquia, graduating Summa Cum Laude under the supervision of Augusto González and Boris Rodríguez. During his doctoral studies, he completed a research stay at the University of Sheffield (England), working with David Whittaker on radiation-matter coupling phenomena in quantum dots embedded in micropillars. These studies resulted in publications in high-impact journals such as Physical Review Letters, Applied Physics Letters, and the Journal of Modern Physics.',
+
+          'footer.copyright': '© 2025 Quantum Physics Symposium — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas'
+        }
+      };
+
+      let currentLang = localStorage.getItem('lang') || 'es';
+      document.documentElement.lang = currentLang;
+
+      function translate(lang) {
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(element => {
+          const key = element.getAttribute('data-i18n');
+          if (translations[lang] && translations[lang][key]) {
+            element.innerHTML = translations[lang][key];
+          }
+        });
+
+        const langBtn = document.getElementById('lang-toggle');
+        if (langBtn) {
+          const langCode = langBtn.querySelector('.lang-code');
+          if (langCode) langCode.textContent = lang.toUpperCase();
+        }
+
+        document.documentElement.lang = lang;
+        localStorage.setItem('lang', lang);
       }
-    };
 
-    let currentLang = localStorage.getItem('lang') || 'es';
-    document.documentElement.lang = currentLang;
+      translate(currentLang);
 
-    function translate(lang) {
-      const elements = document.querySelectorAll('[data-i18n]');
-      elements.forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        if (translations[lang] && translations[lang][key]) {
-          element.innerHTML = translations[lang][key];
+      const langToggle = document.getElementById('lang-toggle');
+      if (langToggle) {
+        langToggle.addEventListener('click', () => {
+          currentLang = currentLang === 'es' ? 'en' : 'es';
+          translate(currentLang);
+        });
+      }
+
+      const navToggle = document.getElementById('nav-toggle');
+      const navMenu = document.getElementById('nav-menu');
+
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
+      });
+
+      document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+          navToggle.classList.remove('active');
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && (!langToggle || !langToggle.contains(e.target))) {
+          navMenu.classList.remove('active');
+          navToggle.classList.remove('active');
         }
       });
-      
-      const langBtn = document.getElementById('lang-toggle');
-      if (langBtn) {
-        const langCode = langBtn.querySelector('.lang-code');
-        if (langCode) langCode.textContent = lang.toUpperCase();
-      }
-      
-      document.documentElement.lang = lang;
-      localStorage.setItem('lang', lang);
-    }
-
-    translate(currentLang);
-
-    const langToggle = document.getElementById('lang-toggle');
-    if (langToggle) {
-      langToggle.addEventListener('click', () => {
-        currentLang = currentLang === 'es' ? 'en' : 'es';
-        translate(currentLang);
-      });
-    }
-
-    const navToggle = document.getElementById('nav-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      navToggle.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        navToggle.classList.remove('active');
-      });
-    });
-
-    document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && (!langToggle || !langToggle.contains(e.target))) {
-        navMenu.classList.remove('active');
-        navToggle.classList.remove('active');
-      }
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
