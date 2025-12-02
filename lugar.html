@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lugar — Simposio de Física Cuántica 2025</title>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F558G27GN5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,11 +12,26 @@
 
     gtag('config', 'G-F558G27GN5');
   </script>
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Titillium+Web:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #8C1919;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      background-color: #6d1313;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -66,40 +80,47 @@
           <span data-i18n="location.dates.value">4 y 5 de diciembre</span>
         </p>
       </div>
+
+      <div style="margin: 2rem 0; padding: 1.5rem; background: rgba(211, 47, 47, 0.08); border-radius: 0.8rem; border-left: 4px solid #D32F2F;">
+        <h2 style="margin-top: 0; color: #C62828;" data-i18n="location.whatsapp.title">📢 Actualizaciones en Vivo</h2>
+        <p data-i18n="location.whatsapp.desc">Los posibles cambios de lugar o actualizaciones importantes serán notificados a través de nuestro canal oficial de WhatsApp.</p>
+        <a href="https://whatsapp.com/channel/0029VbBYV0LBfxoDXYn4nn1k" target="_blank" class="whatsapp-btn" data-i18n="location.whatsapp.btn">Unirse al Canal de WhatsApp</a>
+      </div>
       
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+        
         <div style="padding: 1.5rem; background: rgba(29, 34, 139, 0.05); border-radius: 0.8rem; border: 1px solid rgba(29, 34, 139, 0.1);">
-          <h2 style="margin-top: 0; color: #1d228b;" data-i18n="location.ud.time">🕐 8:00 a.m. - 12:30 p.m.</h2>
-          <p><strong data-i18n="location.ud.room">Auditorio 103 - Macarena A</strong></p>
-          <p data-i18n="location.ud.institution">Universidad Distrital Francisco José de Caldas</p>
+          <h2 style="margin-top: 0; color: #1d228b;" data-i18n="location.morning.time">🕐 8:00 a.m. - 12:30 p.m.</h2>
+          <p><strong data-i18n="location.morning.room">Edificio 52. Carlos Ortiz, Salón 603 y 604</strong></p>
+          <p data-i18n="location.morning.institution">Pontificia Universidad Javeriana</p>
           <div style="margin-top: 1rem;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.4462422761105!2d-74.0646002!3d4.6132576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99908df20b1d%3A0x277cd4182602b73c!2sCra.%203%20%2326a-40%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1762480739182!5m2!1ses!2sco" width="100%" height="250" style="border:0; border-radius:.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><a href="https://maps.app.goo.gl/L4ceWecdktMmTgw69" target="_blank" rel="noopener noreferrer" style="color: #1d228b;" data-i18n="location.map">Ver ubicación en Google Maps</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.923447345678!2d-74.0645!3d4.6285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDM3JzQyLjYiTiA3NMKwMDMnNTIuMiJX!5e0!3m2!1ses!2sco!4v1600000000000!5m2!1ses!2sco" width="100%" height="250" style="border:0; border-radius:.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><a href="https://maps.app.goo.gl/javeriana" target="_blank" rel="noopener noreferrer" style="color: #1d228b;" data-i18n="location.map">Ver ubicación en Google Maps</a></p>
           </div>
         </div>
         
         <div style="padding: 1.5rem; background: rgba(29, 34, 139, 0.05); border-radius: 0.8rem; border: 1px solid rgba(29, 34, 139, 0.1);">
-          <h2 style="margin-top: 0; color: #1d228b;" data-i18n="location.puj.time">🕐 2:00 p.m. - 6:30 p.m.</h2>
-          <p><strong data-i18n="location.puj.room">Auditorio Carlos Corredor - Félix Restrepo</strong></p>
-          <p data-i18n="location.puj.institution">Pontificia Universidad Javeriana</p>
+          <h2 style="margin-top: 0; color: #1d228b;" data-i18n="location.afternoon.time">🕐 2:00 p.m. - 6:30 p.m.</h2>
+          <p><strong data-i18n="location.afternoon.room">Edificio Félix Restrepo, Auditorio Carlos Corredor</strong></p>
+          <p data-i18n="location.afternoon.institution">Pontificia Universidad Javeriana</p>
           <div style="margin-top: 1rem;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.2017612976533!2d-74.06585540080263!3d4.628487500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a8193f1c9f%3A0xf93431640f134c07!2sPontificia%20Universidad%20Javeriana!5e0!3m2!1ses!2sco!4v1762480854389!5m2!1ses!2sco" width="100%" height="250" style="border:0; border-radius:.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><a href="https://maps.app.goo.gl/T2h1iCMfAdBNZ7vS8" target="_blank" rel="noopener noreferrer" style="color: #1d228b;" data-i18n="location.map">Ver ubicación en Google Maps</a></p>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.923447345678!2d-74.0645!3d4.6285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDM3JzQyLjYiTiA3NMKwMDMnNTIuMiJX!5e0!3m2!1ses!2sco!4v1600000000000!5m2!1ses!2sco" width="100%" height="250" style="border:0; border-radius:.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><a href="https://maps.app.goo.gl/javeriana" target="_blank" rel="noopener noreferrer" style="color: #1d228b;" data-i18n="location.map">Ver ubicación en Google Maps</a></p>
           </div>
         </div>
       </div>
       
       <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(29, 34, 139, 0.05); border-radius: 0.8rem;">
         <h3 style="color: #1d228b;" data-i18n="location.info.title">ℹ️ Información adicional</h3>
-        <p data-i18n="location.info.desc">El simposio se realizará en dos ubicaciones diferentes según el horario:</p>
+        <p data-i18n="location.info.desc">El simposio se realizará en dos ubicaciones diferentes dentro del campus según el horario:</p>
         <ul style="line-height: 1.8;">
           <li>
             <strong data-i18n="location.info.morning.label">Sesión mañana (8:00 a.m. - 12:30 p.m.):</strong>
-            <span data-i18n="location.info.morning.value">Auditorio 103 - Macarena A - Universidad Distrital Francisco José de Caldas</span>
+            <span data-i18n="location.info.morning.value">Edificio 52. Carlos Ortiz, Salón 603 y 604</span>
           </li>
           <li>
             <strong data-i18n="location.info.afternoon.label">Sesión tarde (2:00 p.m. - 6:30 p.m.):</strong>
-            <span data-i18n="location.info.afternoon.value">Auditorio Carlos Corredor - Félix Restrepo - Pontificia Universidad Javeriana</span>
+            <span data-i18n="location.info.afternoon.value">Edificio Félix Restrepo, Auditorio Carlos Corredor</span>
           </li>
         </ul>
       </div>
@@ -124,23 +145,32 @@
         'nav.committee': 'Organizadores',
         'nav.contact': 'Contacto',
         'footer.developed': 'Desarrollado por el Comité de Organización',
+        
         'location.title': 'Lugar',
         'location.dates.title': '📅 Fechas',
         'location.dates.label': 'Fechas:',
         'location.dates.value': '4 y 5 de diciembre',
-        'location.ud.time': '🕐 8:00 a.m. - 12:30 p.m.',
-        'location.ud.room': 'Auditorio 103 - Macarena A',
-        'location.ud.institution': 'Universidad Distrital Francisco José de Caldas',
-        'location.puj.time': '🕐 2:00 p.m. - 6:30 p.m.',
-        'location.puj.room': 'Auditorio Carlos Corredor - Félix Restrepo',
-        'location.puj.institution': 'Pontificia Universidad Javeriana',
+        
+        'location.whatsapp.title': '📢 Actualizaciones en Vivo',
+        'location.whatsapp.desc': 'Los posibles cambios de lugar o actualizaciones importantes serán notificados a través de nuestro canal oficial de WhatsApp.',
+        'location.whatsapp.btn': 'Unirse al Canal de WhatsApp',
+
+        'location.morning.time': '🕐 8:00 a.m. - 12:30 p.m.',
+        'location.morning.room': 'Edificio 52. Carlos Ortiz, Salón 603 y 604',
+        'location.morning.institution': 'Pontificia Universidad Javeriana',
+        
+        'location.afternoon.time': '🕐 2:00 p.m. - 6:30 p.m.',
+        'location.afternoon.room': 'Edificio Félix Restrepo, Auditorio Carlos Corredor',
+        'location.afternoon.institution': 'Pontificia Universidad Javeriana',
+        
         'location.map': 'Ver ubicación en Google Maps',
         'location.info.title': 'ℹ️ Información adicional',
-        'location.info.desc': 'El simposio se realizará en dos ubicaciones diferentes según el horario:',
+        'location.info.desc': 'El simposio se realizará en dos ubicaciones diferentes dentro del campus según el horario:',
         'location.info.morning.label': 'Sesión mañana (8:00 a.m. - 12:30 p.m.):',
-        'location.info.morning.value': 'Auditorio 103 - Macarena A - Universidad Distrital Francisco José de Caldas',
+        'location.info.morning.value': 'Edificio 52. Carlos Ortiz, Salón 603 y 604',
         'location.info.afternoon.label': 'Sesión tarde (2:00 p.m. - 6:30 p.m.):',
-        'location.info.afternoon.value': 'Auditorio Carlos Corredor - Félix Restrepo - Pontificia Universidad Javeriana',
+        'location.info.afternoon.value': 'Edificio Félix Restrepo, Auditorio Carlos Corredor',
+        
         'footer.copyright': '© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas'
       },
       en: {
@@ -153,23 +183,32 @@
         'nav.committee': 'Organizers',
         'nav.contact': 'Contact',
         'footer.developed': 'Developed by the Organizing Committee',
+        
         'location.title': 'Location',
         'location.dates.title': '📅 Dates',
         'location.dates.label': 'Dates:',
         'location.dates.value': 'December 4 and 5',
-        'location.ud.time': '🕐 8:00 a.m. - 12:30 p.m.',
-        'location.ud.room': 'Auditorium 103 - Macarena A',
-        'location.ud.institution': 'Universidad Distrital Francisco José de Caldas',
-        'location.puj.time': '🕐 2:00 p.m. - 6:30 p.m.',
-        'location.puj.room': 'Carlos Corredor Auditorium - Félix Restrepo',
-        'location.puj.institution': 'Pontificia Universidad Javeriana',
+        
+        'location.whatsapp.title': '📢 Live Updates',
+        'location.whatsapp.desc': 'Possible venue changes or important updates will be notified via our official WhatsApp channel.',
+        'location.whatsapp.btn': 'Join WhatsApp Channel',
+
+        'location.morning.time': '🕐 8:00 a.m. - 12:30 p.m.',
+        'location.morning.room': 'Building 52. Carlos Ortiz, Room 603 & 604',
+        'location.morning.institution': 'Pontificia Universidad Javeriana',
+        
+        'location.afternoon.time': '🕐 2:00 p.m. - 6:30 p.m.',
+        'location.afternoon.room': 'Félix Restrepo Building, Carlos Corredor Auditorium',
+        'location.afternoon.institution': 'Pontificia Universidad Javeriana',
+        
         'location.map': 'View location on Google Maps',
         'location.info.title': 'ℹ️ Additional information',
         'location.info.desc': 'The symposium takes place in two venues depending on the schedule:',
         'location.info.morning.label': 'Morning session (8:00 a.m. - 12:30 p.m.):',
-        'location.info.morning.value': 'Auditorio 103 - Macarena A - Universidad Distrital Francisco José de Caldas',
+        'location.info.morning.value': 'Building 52. Carlos Ortiz, Room 603 & 604',
         'location.info.afternoon.label': 'Afternoon session (2:00 p.m. - 6:30 p.m.):',
-        'location.info.afternoon.value': 'Auditorio Carlos Corredor - Félix Restrepo - Pontificia Universidad Javeriana',
+        'location.info.afternoon.value': 'Félix Restrepo Building, Carlos Corredor Auditorium',
+        
         'footer.copyright': '© 2025 Quantum Physics Symposium — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas'
       }
     };
