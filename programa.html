@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programa — Simposio de Física Cuántica 2025</title>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F558G27GN5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,11 +12,44 @@
 
     gtag('config', 'G-F558G27GN5');
   </script>
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Titillium+Web:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* WhatsApp Button Style (Consistent with lugar.html) */
+    .whatsapp-container {
+      margin: 2rem 0; 
+      padding: 1.5rem; 
+      background: rgba(140, 25, 25, 0.08); 
+      border-radius: 0.8rem; 
+      border-left: 4px solid #8C1919;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #8C1919;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      background-color: #6d1313;
+    }
+    /* Session Location Header */
+    .session-location {
+      background-color: #f0f4f8;
+      padding: 0.8rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      color: #1d2745;
+      border-left: 3px solid #1d228b;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -59,7 +91,18 @@
     <section>
       <h1 data-i18n="program.title">Programa</h1>
 
+      <div class="whatsapp-container">
+        <h3 style="margin-top: 0; color: #8C1919;" data-i18n="program.updates.title">📢 Actualizaciones en Vivo</h3>
+        <p data-i18n="program.updates.desc">Consulta cambios de última hora en el programa a través de nuestro canal de WhatsApp.</p>
+        <a href="https://whatsapp.com/channel/0029VbBYV0LBfxoDXYn4nn1k" target="_blank" class="whatsapp-btn" data-i18n="program.updates.btn">Canal de WhatsApp</a>
+      </div>
+
       <h3 data-i18n="program.thursday">Jueves 4 de diciembre</h3>
+      
+      <div class="session-location">
+        <strong data-i18n="session.morning">Mañana:</strong> <span data-i18n="location.morning">Edificio 52. Carlos Ortiz, Salón 603 y 604 (PUJ)</span>
+      </div>
+      
       <div class="table-wrap">
         <table>
           <thead>
@@ -77,12 +120,12 @@
             </tr>
             <tr>
               <td>08:30 - 09:00</td>
-              <td data-i18n="thu.08:30">Apertura UDFJC</td>
+              <td data-i18n="thu.08:30">Apertura</td>
               <td>-</td>
             </tr>
             <tr>
               <td>09:00 - 09:30</td>
-              <td data-i18n="thu.09:00">¿Son verdaderas las teorias las teorias cientificas?</td>
+              <td data-i18n="thu.09:00">¿Son verdaderas las teorías científicas?</td>
               <td>Reinaldo Bernal (PUJ)</td>
             </tr>
             <tr>
@@ -103,7 +146,7 @@
             <tr>
               <td>11:15 - 12:00</td>
               <td data-i18n="thu.11:15">Gravedad Cuántica</td>
-              <td>David Berestein (UCSB)</td>
+              <td>David Berenstein (UCSB)</td>
             </tr>
             <tr>
               <td>12:00 - 12:30</td>
@@ -115,9 +158,27 @@
               <td data-i18n="thu.12:30">Pausa para Almuerzo</td>
               <td>-</td>
             </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="session-location" style="margin-top: 2rem;">
+        <strong data-i18n="session.afternoon">Tarde:</strong> <span data-i18n="location.afternoon">Edificio Félix Restrepo, Auditorio Carlos Corredor (PUJ)</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="program.time">Hora</th>
+              <th data-i18n="program.activity">Actividad</th>
+              <th data-i18n="program.speaker">Ponente</th>
+            </tr>
+          </thead>
+          <tbody>
             <tr>
               <td>14:00 - 14:30</td>
-              <td data-i18n="thu.14:00">Apertura PUJ</td>
+              <td data-i18n="thu.14:00">Apertura Sesión Tarde</td>
               <td>-</td>
             </tr>
             <tr>
@@ -144,7 +205,12 @@
         </table>
       </div>
 
-      <h3 data-i18n="program.friday">Viernes 5 de diciembre</h3>
+      <h3 data-i18n="program.friday" style="margin-top: 3rem;">Viernes 5 de diciembre</h3>
+
+      <div class="session-location">
+        <strong data-i18n="session.morning">Mañana:</strong> <span data-i18n="location.morning">Edificio 52. Carlos Ortiz, Salón 603 y 604 (PUJ)</span>
+      </div>
+
       <div class="table-wrap">
         <table>
           <thead>
@@ -167,7 +233,7 @@
             </tr>
             <tr>
               <td>09:15 - 09:45</td>
-              <td data-i18n="thu.09.15">Biología Cuántica: Fotosíntesis y más Allá</td>
+              <td data-i18n="fri.09:15">Biología Cuántica: Fotosíntesis y más Allá</td>
               <td>Germán Pabón (PUJ)</td>
             </tr>
             <tr>
@@ -195,9 +261,27 @@
               <td data-i18n="fri.12:30">Pausa para Almuerzo</td>
               <td>-</td>
             </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="session-location" style="margin-top: 2rem;">
+        <strong data-i18n="session.afternoon">Tarde:</strong> <span data-i18n="location.afternoon">Edificio Félix Restrepo, Auditorio Carlos Corredor (PUJ)</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="program.time">Hora</th>
+              <th data-i18n="program.activity">Actividad</th>
+              <th data-i18n="program.speaker">Ponente</th>
+            </tr>
+          </thead>
+          <tbody>
             <tr>
               <td>14:00 - 15:00</td>
-              <td data-i18n="fri.14:00">Tecnologias Cuanticas: 100 Años Revolucionando al Mundo</td>
+              <td data-i18n="fri.14:00">Tecnologías Cuánticas: 100 Años Revolucionando al Mundo</td>
               <td>Herbert Vinck (UNAL - SGR)</td>
             </tr>
             <tr>
@@ -207,7 +291,7 @@
             </tr>
             <tr>
               <td>15:45 - 16:15</td>
-              <td data-i18n="fri.15:45">Energías, Paisajes y Aprendizaje: El Nobel de Física 2024 Visto desde la Mecánica Cuántica<\td>
+              <td data-i18n="fri.15:45">Energías, Paisajes y Aprendizaje: El Nobel de Física 2024 Visto desde la Mecánica Cuántica</td>
               <td>Carlos Gómez Vasco (UDFJC)</td>
             </tr>
             <tr>
@@ -217,12 +301,12 @@
             </tr>
             <tr>
               <td>16:30 - 17:00</td>
-              <td data-i18n="fri.16:30">Una vista a las vibraciones colectivas en mecánica cuántica: modelación teórica y medidas experimentales, validante,  con aplicaciones</td>
+              <td data-i18n="fri.16:30">Una vista a las vibraciones colectivas en mecánica cuántica...</td>
               <td>Henry Ortiz (UDFJC)</td>
             </tr>
             <tr>
               <td>17:00 - 17:30</td>
-              <td data-i18n="fri.17:00">Hamiltoniano Electrónico del Sólido Cristalino, una Solución Autoconsistente Mediante DFT</td>
+              <td data-i18n="fri.17:00">Hamiltoniano Electrónico del Sólido Cristalino...</td>
               <td>Miguel Espitia (UDFJC)</td>
             </tr>
           </tbody>
@@ -249,26 +333,38 @@
         'nav.location': 'Lugar',
         'nav.committee': 'Organizadores',
         'nav.contact': 'Contacto',
+        
         'program.title': 'Programa',
+        'program.updates.title': '📢 Actualizaciones en Vivo',
+        'program.updates.desc': 'Consulta cambios de última hora en el programa a través de nuestro canal de WhatsApp.',
+        'program.updates.btn': 'Canal de WhatsApp',
+        
         'program.time': 'Hora',
         'program.activity': 'Actividad',
         'program.speaker': 'Ponente',
         'program.thursday': 'Jueves 4 de diciembre',
         'program.friday': 'Viernes 5 de diciembre',
+        
+        'session.morning': 'Mañana:',
+        'session.afternoon': 'Tarde:',
+        'location.morning': 'Edificio 52. Carlos Ortiz, Salón 603 y 604 (PUJ)',
+        'location.afternoon': 'Edificio Félix Restrepo, Auditorio Carlos Corredor (PUJ)',
+
         'thu.08:00': 'Registro',
-        'thu.08:30': 'Apertura UDFJC',
-        'thu.09:00': '¿Son verdaderas las teorias cientificas?',
-        'thu.09:30': 'Caminando el Articulo de Heisenberg y el Surgimiento de la Mecánica Matricial a la Born',
+        'thu.08:30': 'Apertura',
+        'thu.09:00': '¿Son verdaderas las teorías científicas?',
+        'thu.09:30': 'Caminando el Artículo de Heisenberg y el Surgimiento de la Mecánica Matricial a la Born',
         'thu.10:15': 'Entrelazamiento Cuántico y Computación Cuántica',
         'thu.10:45': 'Pausa para Café',
         'thu.11:15': 'Gravedad Cuántica',
         'thu.12:00': 'La Fase que se Escapó del Pozo: Una Historia Cuántica para no Perder la Coherencia',
         'thu.12:30': 'Pausa para Almuerzo',
-        'thu.14:00': 'Apertura PUJ',
+        'thu.14:00': 'Apertura Sesión Tarde',
         'thu.14:30': 'Experimentos y Pósters',
         'thu.16:00': 'Fenómenos Cuánticos en Semiconductores Orgánicos',
         'thu.16:30': 'Plasmones de Superficie y Aplicaciones a 2644 msnm',
         'thu.17:00': 'Sistema Surfactante Pulmonar',
+        
         'fri.08:00': 'Bienvenida',
         'fri.08:30': 'Computación Cuántica',
         'fri.09:15': 'Biología Cuántica: Fotosíntesis y más Allá',
@@ -281,8 +377,9 @@
         'fri.15:00': 'Metrología Cuántica: Reloj Atómico',
         'fri.15:45': 'Energías, Paisajes y Aprendizaje: El Nobel de Física 2024 Visto desde la Mecánica Cuántica',
         'fri.16:15': 'Pausa para Café',
-        'fri.16:30': 'Una vista a las vibraciones colectivas en mecánica cuántica: modelación teórica y medidas experimentales, validante,  con aplicaciones',
+        'fri.16:30': 'Una vista a las vibraciones colectivas en mecánica cuántica: modelación teórica y medidas experimentales, validante, con aplicaciones',
         'fri.17:00': 'Hamiltoniano Electrónico del Sólido Cristalino, una Solución Autoconsistente Mediante DFT',
+        
         'footer.copyright': '© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas',
         'footer.developed': 'Desarrollado por el Comité de Organización'
       },
@@ -295,14 +392,25 @@
         'nav.location': 'Location',
         'nav.committee': 'Organizers',
         'nav.contact': 'Contact',
+        
         'program.title': 'Program',
+        'program.updates.title': '📢 Live Updates',
+        'program.updates.desc': 'Check for last-minute schedule changes via our WhatsApp channel.',
+        'program.updates.btn': 'WhatsApp Channel',
+        
         'program.time': 'Time',
         'program.activity': 'Activity',
         'program.speaker': 'Speaker',
         'program.thursday': 'Thursday, December 4',
         'program.friday': 'Friday, December 5',
+
+        'session.morning': 'Morning:',
+        'session.afternoon': 'Afternoon:',
+        'location.morning': 'Building 52. Carlos Ortiz, Room 603 & 604 (PUJ)',
+        'location.afternoon': 'Félix Restrepo Building, Carlos Corredor Auditorium (PUJ)',
+
         'thu.08:00': 'Registration',
-        'thu.08:30': 'Opening UDFJC',
+        'thu.08:30': 'Opening',
         'thu.09:00': 'Are scientific theories true?',
         'thu.09:30': "Taking a walk through Heisenberg's Paper and the arise of Born's Matrix Mechanics",
         'thu.10:15': 'Quantum Entanglement and Quantum Computing',
@@ -310,11 +418,12 @@
         'thu.11:15': 'Quantum Gravity',
         'thu.12:00': 'The Phase That Escaped the Well: A Quantum Tale for Keeping it Coherent',
         'thu.12:30': 'Lunch Break',
-        'thu.14:00': 'Opening PUJ',
+        'thu.14:00': 'Opening Afternoon Session',
         'thu.14:30': 'Experiments and Posters',
         'thu.16:00': 'Quantum Phenomena in Organic Semiconductors',
         'thu.16:30': 'Surfaces Plasmons and Applications at 2644 masl',
         'thu.17:00': 'Pulmonary Surfactant System',
+        
         'fri.08:00': 'Welcoming',
         'fri.08:30': 'Quantum Computing',
         'fri.09:15': 'Quantum Biology: Photosynthesis and Beyond',
@@ -327,20 +436,17 @@
         'fri.15:00': 'Quantum Metrology: Atomic Clock',
         'fri.15:45': 'Energy, Landscapes, and Learning: The 2024 Nobel Prize in Physics through the Lens of Quantum Mechanics',
         'fri.16:15': 'Coffee Break',
-        'fri.16:30': 'A view of collective vibrations in quantum mechanics: theoretical modelling and experimental measurements, validating,  with applications',
-        'fri.17:00': 'ELectronic Hamiltonian of Crystalline Solid, a Self-Consistent Solution via DFT',
+        'fri.16:30': 'A view of collective vibrations in quantum mechanics: theoretical modelling and experimental measurements, validating, with applications',
+        'fri.17:00': 'Electronic Hamiltonian of Crystalline Solid, a Self-Consistent Solution via DFT',
+        
         'footer.copyright': '© 2025 Quantum Physics Symposium — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas',
         'footer.developed': 'Developed by the Organizing Committee'
       }
     };
 
-    // Get current language from localStorage or default to Spanish
     let currentLang = localStorage.getItem('lang') || 'es';
-
-    // Update HTML lang attribute
     document.documentElement.lang = currentLang;
 
-    // Function to translate content
     function translate(lang) {
       const elements = document.querySelectorAll('[data-i18n]');
       elements.forEach(element => {
@@ -349,30 +455,27 @@
           element.textContent = translations[lang][key];
         }
       });
-
-      // Update language toggle button
+      
       const langBtn = document.getElementById('lang-toggle');
-      const langCode = langBtn.querySelector('.lang-code');
-      langCode.textContent = lang.toUpperCase();
-
-      // Update HTML lang attribute
+      if (langBtn) {
+        const langCode = langBtn.querySelector('.lang-code');
+        if (langCode) langCode.textContent = lang.toUpperCase();
+      }
+      
       document.documentElement.lang = lang;
-
-      // Save preference
       localStorage.setItem('lang', lang);
     }
 
-    // Initialize translation on page load
     translate(currentLang);
 
-    // Language toggle button
     const langToggle = document.getElementById('lang-toggle');
-    langToggle.addEventListener('click', () => {
-      currentLang = currentLang === 'es' ? 'en' : 'es';
-      translate(currentLang);
-    });
+    if (langToggle) {
+      langToggle.addEventListener('click', () => {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        translate(currentLang);
+      });
+    }
 
-    // Mobile Navigation Toggle
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
 
@@ -381,7 +484,6 @@
       navToggle.classList.toggle('active');
     });
 
-    // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-menu a').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('active');
@@ -389,9 +491,8 @@
       });
     });
 
-    // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && !langToggle.contains(e.target)) {
+      if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && (!langToggle || !langToggle.contains(e.target))) {
         navMenu.classList.remove('active');
         navToggle.classList.remove('active');
       }
