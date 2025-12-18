@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medios Visuales — Simposio de Física Cuántica 2025</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F558G27GN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F558G27GN5');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Titillium+Web:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-logos">
+      <div class="header-logos-container">
+        <img src="images/distrital.png" alt="Universidad Distrital" class="header-logo">
+        <img src="images/javerianaDark.png" alt="Universidad Javeriana" class="header-logo">
+      </div>
+      <div class="lang-toggle">
+        <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-code">ES</span>
+        </button>
+      </div>
+    </div>
+    <nav>
+      <div class="nav-brand">
+        <a href="index.html"><h3 data-i18n="nav.brand">Simposio Física Cuántica</h3></a>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="acerca.html" data-i18n="nav.about">Acerca</a></li>
+          <li><a href="invitados.html" data-i18n="nav.guests">Invitados</a></li>
+          <li><a href="multimedia.html" data-i18n="nav.media">Medios Visuales</a></li>
+          <li><a href="comite.html" data-i18n="nav.committee">Organizadores</a></li>
+          <li><a href="programa.html" data-i18n="nav.program">Programa</a></li>
+          <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
+          <li><a href="lugar.html" data-i18n="nav.location">Lugar</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 data-i18n="media.title">Medios Visuales</h1>
+      <p data-i18n="media.intro">Recursos audiovisuales y registros de las sesiones académicas del simposio.</p>
+
+      <div class="grid grid-3" style="margin-top: 3rem;">
+        <div class="card">
+          <h3 data-i18n="media.unesco.title">Perfil Evento UNESCO - IYQ 2025</h3>
+          <p data-i18n="media.unesco.text">Página oficial del evento en el marco del Año Internacional de la Ciencia y Tecnología Cuántica.</p>
+          <a href="https://quantum2025.org/es/iyq-event/la-mecanica-cuantica-en-su-centenario-un-corto-paseo-por-sus-inicios-y-su-presente/" 
+             target="_blank" class="btn btn--primary btn--sm" style="margin-top: 1rem;" data-i18n="media.unesco.btn">Visitar perfil</a>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="media.playlist.title">Memorias del Evento</h3>
+          <p data-i18n="media.playlist.text">Lista de reproducción oficial con las ponencias y debates del centenario.</p>
+          <a href="https://www.youtube.com/playlist?list=PLoRLK-0MlLuMC0K_GvEr-O1sjZI8mFgyc" 
+             target="_blank" class="btn btn--outline btn--sm" style="margin-top: 1rem;" data-i18n="media.playlist.btn">Ver lista de reproducción</a>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="media.chapter.title">Capítulo Estudiantil</h3>
+          <p data-i18n="media.chapter.text">Material adicional gestionado por el Capítulo Estudiantil de Acolfísica (UDFJC).</p>
+          <a href="https://www.youtube.com/@Cap%C3%ADtuloEstudiantilUD/streams" 
+             target="_blank" class="btn btn--outline btn--sm" style="margin-top: 1rem;" data-i18n="media.chapter.btn">Ir al canal</a>
+        </div>
+      </div>
+
+      <div style="margin-top: 4rem; padding: 2rem; background: rgba(44, 86, 151, 0.05); border-radius: 1.25rem; border: 1px solid var(--border-light);">
+        <h2 data-i18n="media.thanks.title">Reconocimientos Especiales</h2>
+        <p data-i18n="media.thanks.text">Agradecemos al Centro Ático (PUJ) por su colaboración técnica en la grabación y transmisión en vivo del simposio.</p>
+        <a href="https://www.youtube.com/c/Centro%C3%81ticoPUJ/featured" 
+           target="_blank" class="btn--ghost" style="margin-top: 1rem;" data-i18n="media.thanks.link">Conoce el Centro Ático</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr style="border:none; border-top:1px solid #1d2745; margin-bottom:1rem;">
+    <p data-i18n="footer.copyright">© 2025 Simposio de Física Cuántica — PUJ & UDFJC</p>
+    <p data-i18n="footer.developed">Desarrollado por el Comité de Organización</p>
+  </footer>
+
+  <script>
+    const translations = {
+      es: {
+        'nav.brand': 'Simposio Física Cuántica', 'nav.about': 'Acerca', 'nav.guests': 'Invitados',
+        'nav.media': 'Medios Visuales', 'nav.committee': 'Organizadores', 'nav.program': 'Programa',
+        'nav.register': 'Registro', 'nav.location': 'Lugar', 'nav.contact': 'Contacto',
+        'media.title': 'Medios Visuales', 'media.intro': 'Recursos audiovisuales y registros de las sesiones académicas.',
+        'media.unesco.title': 'Perfil Evento UNESCO - IYQ 2025', 'media.unesco.text': 'Página oficial del evento en el marco del Año Internacional de la Ciencia y Tecnología Cuántica.',
+        'media.unesco.btn': 'Visitar perfil',
+        'media.playlist.title': 'Memorias del Evento', 'media.playlist.text': 'Lista de reproducción oficial con las ponencias y debates del centenario.',
+        'media.playlist.btn': 'Ver lista de reproducción',
+        'media.chapter.title': 'Capítulo Estudiantil', 'media.chapter.text': 'Material adicional gestionado por el Capítulo Estudiantil de Acolfísica (UDFJC).',
+        'media.chapter.btn': 'Ir al canal',
+        'media.thanks.title': 'Reconocimientos Especiales', 'media.thanks.text': 'Agradecemos al Centro Ático (PUJ) por su colaboración técnica en la grabación y transmisión en vivo del simposio.',
+        'media.thanks.link': 'Conoce el Centro Ático',
+        'footer.copyright': '© 2025 Simposio de Física Cuántica — PUJ & UDFJC', 'footer.developed': 'Desarrollado por el Comité de Organización'
+      },
+      en: {
+        'nav.brand': 'Quantum Physics Symposium', 'nav.about': 'About', 'nav.guests': 'Guests',
+        'nav.media': 'Visual Media', 'nav.committee': 'Organizers', 'nav.program': 'Program',
+        'nav.register': 'Registration', 'nav.location': 'Location', 'nav.contact': 'Contact',
+        'media.title': 'Visual Media', 'media.intro': 'Audio-visual resources and records of the academic sessions.',
+        'media.unesco.title': 'UNESCO Event Profile - IYQ 2025', 'media.unesco.text': 'Official event page within the International Year of Quantum Science and Technology framework.',
+        'media.unesco.btn': 'Visit profile',
+        'media.playlist.title': 'Event Highlights', 'media.playlist.text': 'Official playlist containing the lectures and debates of the centenary.',
+        'media.playlist.btn': 'Watch playlist',
+        'media.chapter.title': 'Student Chapter', 'media.chapter.text': 'Additional material managed by the Acolfísica Student Chapter (UDFJC).',
+        'media.chapter.btn': 'Go to channel',
+        'media.thanks.title': 'Special Acknowledgements', 'media.thanks.text': 'We thank Centro Ático (PUJ) for their technical collaboration in the recording and live streaming of the symposium.',
+        'media.thanks.link': 'Learn more about Centro Ático',
+        'footer.copyright': '© 2025 Quantum Physics Symposium — PUJ & UDFJC', 'footer.developed': 'Developed by the Organizing Committee'
+      }
+    };
+
+    let currentLang = localStorage.getItem('lang') || 'es';
+    function translate(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+      const langBtn = document.getElementById('lang-toggle');
+      if (langBtn) {
+        langBtn.querySelector('.lang-code').textContent = lang.toUpperCase();
+      }
+      document.documentElement.lang = lang;
+      localStorage.setItem('lang', lang);
+    }
+
+    translate(currentLang);
+    
+    document.getElementById('lang-toggle').addEventListener('click', () => {
+      currentLang = currentLang === 'es' ? 'en' : 'es'; 
+      translate(currentLang);
+    });
+
+    const navToggle = document.getElementById('nav-toggle'), navMenu = document.getElementById('nav-menu');
+    navToggle.addEventListener('click', () => { 
+      navMenu.classList.toggle('active'); 
+      navToggle.classList.toggle('active'); 
+    });
+  </script>
+</body>
+</html>

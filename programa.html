@@ -68,12 +68,13 @@
       </div>
       <div class="nav-menu" id="nav-menu">
         <ul>
-          <li><a href="acerca.html" data-i18n="nav.about">Acerca del Simposio</a></li>
+          <li><a href="acerca.html" data-i18n="nav.about">Acerca</a></li>
+          <li><a href="multimedia.html" data-i18n="nav.media">Medios Visuales</a></li>
           <li><a href="invitados.html" data-i18n="nav.guests">Invitados</a></li>
+          <li><a href="comite.html" data-i18n="nav.committee">Organizadores</a></li>
           <li><a href="programa.html" data-i18n="nav.program">Programa</a></li>
           <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
           <li><a href="lugar.html" data-i18n="nav.location">Lugar</a></li>
-          <li><a href="comite.html" data-i18n="nav.committee">Organizadores</a></li>
           <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </div>
@@ -96,11 +97,11 @@
       </div>
 
       <h3 data-i18n="program.thursday">Jueves 4 de diciembre</h3>
-      
+
       <div class="session-location">
         <strong data-i18n="session.morning">Mañana:</strong> <span data-i18n="location.morning">Edificio 51. Ángel Valtierra, Salón 603 y 604 (PUJ)</span>
       </div>
-      
+
       <div class="table-wrap">
         <table>
           <thead>
@@ -326,18 +327,18 @@
         'nav.location': 'Lugar',
         'nav.committee': 'Organizadores',
         'nav.contact': 'Contacto',
-        
+
         'program.title': 'Programa',
         'program.updates.title': '📢 Actualizaciones en Vivo',
         'program.updates.desc': 'Consulta cambios de última hora en el programa a través de nuestro canal de WhatsApp.',
         'program.updates.btn': 'Canal de WhatsApp',
-        
+
         'program.time': 'Hora',
         'program.activity': 'Actividad',
         'program.speaker': 'Ponente',
         'program.thursday': 'Jueves 4 de diciembre',
         'program.friday': 'Viernes 5 de diciembre',
-        
+
         'session.morning': 'Mañana:',
         'session.afternoon': 'Tarde:',
         'location.morning': 'Edificio 51. Ángel Valtierra, Salón 603 y 604 (PUJ)',
@@ -357,7 +358,7 @@
         'thu.16:00': 'Fenómenos Cuánticos en Semiconductores Orgánicos',
         'thu.16:30': 'Una vista a las vibraciones colectivas en mecánica cuántica: modelación teórica y medidas experimentales, validante, con aplicaciones',
         'thu.17:00': 'Plasmones de Superficie y Aplicaciones a 2644 msnm',
-        
+
         'fri.08:00': 'Bienvenida',
         'fri.08:30': 'Computación Cuántica',
         'fri.09:15': 'Biología Cuántica: Fotosíntesis y más Allá',
@@ -372,7 +373,7 @@
         'fri.16:15': 'Pausa para Café',
         'fri.16:30': 'Sistema Surfactante Pulmonar',
         'fri.17:00': 'Hamiltoniano Electrónico del Sólido Cristalino, una Solución Autoconsistente Mediante DFT',
-        
+
         'footer.copyright': '© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas',
         'footer.developed': 'Desarrollado por el Comité de Organización'
       },
@@ -385,12 +386,12 @@
         'nav.location': 'Location',
         'nav.committee': 'Organizers',
         'nav.contact': 'Contact',
-        
+
         'program.title': 'Program',
         'program.updates.title': '📢 Live Updates',
         'program.updates.desc': 'Check for last-minute schedule changes via our WhatsApp channel.',
         'program.updates.btn': 'WhatsApp Channel',
-        
+
         'program.time': 'Time',
         'program.activity': 'Activity',
         'program.speaker': 'Speaker',
@@ -416,7 +417,7 @@
         'thu.16:00': 'Quantum Phenomena in Organic Semiconductors',
         'thu.16:30': 'A view of collective vibrations in quantum mechanics: theoretical modelling and experimental measurements, validating, with applications',
         'thu.17:00': 'Surfaces Plasmons and Applications at 2644 masl',
-        
+
         'fri.08:00': 'Welcoming',
         'fri.08:30': 'Quantum Computing',
         'fri.09:15': 'Quantum Biology: Photosynthesis and Beyond',
@@ -431,7 +432,7 @@
         'fri.16:15': 'Coffee Break',
         'fri.16:30': 'Pulmonary Surfactant System',
         'fri.17:00': 'Electronic Hamiltonian of Crystalline Solid, a Self-Consistent Solution via DFT',
-        
+
         'footer.copyright': '© 2025 Quantum Physics Symposium — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas',
         'footer.developed': 'Developed by the Organizing Committee'
       }
@@ -448,13 +449,13 @@
           element.textContent = translations[lang][key];
         }
       });
-      
+
       const langBtn = document.getElementById('lang-toggle');
       if (langBtn) {
         const langCode = langBtn.querySelector('.lang-code');
         if (langCode) langCode.textContent = lang.toUpperCase();
       }
-      
+
       document.documentElement.lang = lang;
       localStorage.setItem('lang', lang);
     }

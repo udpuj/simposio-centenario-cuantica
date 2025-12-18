@@ -36,12 +36,13 @@
       </div>
       <div class="nav-menu" id="nav-menu">
         <ul>
-          <li><a href="acerca.html" data-i18n="nav.about">Acerca del Simposio</a></li>
+          <li><a href="acerca.html" data-i18n="nav.about">Acerca</a></li>
+          <li><a href="multimedia.html" data-i18n="nav.media">Medios Visuales</a></li>
           <li><a href="invitados.html" data-i18n="nav.guests">Invitados</a></li>
+          <li><a href="comite.html" data-i18n="nav.committee">Organizadores</a></li>
           <li><a href="programa.html" data-i18n="nav.program">Programa</a></li>
           <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
           <li><a href="lugar.html" data-i18n="nav.location">Lugar</a></li>
-          <li><a href="comite.html" data-i18n="nav.committee">Organizadores</a></li>
           <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </div>
@@ -57,23 +58,23 @@
     <section>
       <h1 data-i18n="about.title">Acerca del Simposio</h1>
       <p data-i18n="about.intro1">El simposio <strong>'La Mecánica Cuántica en su Centenario: Un corto paseo por sus inicios y su presente'</strong> tiene como objetivo construir comunidad científica y académica entre la Universidad Distrital y la Pontificia Universidad Javeriana.</p>
-      
+
       <p data-i18n="about.intro2">El evento busca llegar a un público general interesado en entender cómo la mecánica cuántica ha moldeado el mundo en el que vivimos; por ello, se abordarán temas que abarcan desde sus principios fundamentales hasta sus aplicaciones más modernas e impactantes, como lo son la computación cuántica, la gravedad cuántica, la biología cuántica, la metrología cuántica y montajes experimentales.</p>
-      
+
       <p data-i18n="about.intro3">Para esto, se contará con la participación de ponentes de varias universidades colombianas e invitados internacionales. Este será un espacio de colaboración interinstitucional y divulgación científica de vanguardia en Bogotá y Colombia.</p>
-      
+
       <p>
         <strong data-i18n="about.organizers.label">Organizan:</strong>
         <span data-i18n="about.organizers.value">Pontificia Universidad Javeriana y Universidad Distrital Francisco José de Caldas.</span>
       </p>
-      
+
       <div style="margin: 2rem 0; padding: 1.5rem; background: rgba(29, 34, 139, 0.05); border-radius: 0.8rem; border-left: 4px solid #1d228b;">
         <h2 style="margin-top: 0; color: #1d228b;" data-i18n="about.timeline.title">📅 Fechas y Horario</h2>
         <p>
           <strong data-i18n="about.dates.label">Fechas:</strong>
           <span data-i18n="about.dates.value">4 y 5 de diciembre</span>
         </p>
-        
+
         <h3 style="margin-top: 1.5rem; color: #1d228b;" data-i18n="about.locations.title">📍 Ubicaciones</h3>
         <div style="margin-top: 1rem;">
           <p>
@@ -86,7 +87,7 @@
           </p>
         </div>
       </div>
-      
+
       <div class="org-logos org-logos--dark">
         <img class="org-logo" src="images/javerianaDark.png" alt="Pontificia Universidad Javeriana">
         <img class="org-logo" src="images/distrital.png" alt="Universidad Distrital Francisco José de Caldas">
@@ -173,13 +174,13 @@
           element.innerHTML = translations[lang][key];
         }
       });
-      
+
       const langBtn = document.getElementById('lang-toggle');
       if (langBtn) {
         const langCode = langBtn.querySelector('.lang-code');
         if (langCode) langCode.textContent = lang.toUpperCase();
       }
-      
+
       document.documentElement.lang = lang;
       localStorage.setItem('lang', lang);
     }
