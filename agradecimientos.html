@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro — Simposio de Física Cuántica 2025</title>
-  <!-- Google tag (gtag.js) -->
+  <title>Agradecimientos — Simposio de Física Cuántica 2025</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F558G27GN5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,11 +12,32 @@
 
     gtag('config', 'G-F558G27GN5');
   </script>
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Titillium+Web:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .ack-section {
+      margin-top: 3rem;
+    }
+    .ack-title {
+      margin-bottom: 1.5rem;
+    }
+    .ack-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .ack-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: var(--text-muted);
+      line-height: 2;
+    }
+    .ack-item {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -59,33 +79,37 @@
 
   <main>
     <section>
-      <h1>Registro</h1>
-      <p>Completa el siguiente formulario para inscribirte al simposio. También puedes revisar la <a href="programa.html" class="btn--ghost">programación completa</a>.</p>
+      <h1 data-i18n="ack.title">Agradecimientos</h1>
 
-      <div style="margin-top: 2rem;">
-        <h3>Información del evento</h3>
-        <p><strong>Fecha:</strong> 4 y 5 de Diciembre</p>
-        <p><strong>Hora:</strong> 8:00 - 18:00</p>
-        <p><strong>Lugar:</strong> <a href="lugar.html" class="btn--ghost">Ver ubicación</a></p>
-        <p><strong>Costo:</strong> Gratuito</p>
-        <p><strong>Modalidad:</strong> Presencial</p>
+      <div class="ack-section">
+        <h2 class="ack-title"><a href="https://www.javeriana.edu.co/atico" target="_blank" class="ack-link">Centro Ático</a></h2>
+        <ul class="ack-list">
+          <li class="ack-item">• Juan Camilo Hoyos</li>
+          <li class="ack-item">• Pablo Jaramillo</li>
+          <li class="ack-item">• Diego Martinez</li>
+        </ul>
       </div>
 
-      <div style="margin-top: 3rem;">
-        <h3>Formulario de Inscripción</h3>
-        <div style="width: 100%; max-width: 800px; margin: 2rem auto; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-          <iframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdtCS4-JYI4i7RCrieQ4GY_G8ui4yJ-kQwmS88C7AJAUrAkjw/viewform?embedded=true" 
-            width="100%" 
-            height="1200" 
-            frameborder="0" 
-            marginheight="0" 
-            marginwidth="0"
-            style="display: block; border: none; min-height: 1200px;">
-            Cargando…
-          </iframe>
-        </div>
+      <div class="ack-section">
+        <h2 class="ack-title">LAUD</h2>
       </div>
+
+       <div class="ack-section">
+        <h2 class="ack-title"><a href="https://javerianaestereo.com/" target="_blank" class="ack-link">Javeriana Estéreo - Programa Bitácora</a></h2>
+        <ul class="ack-list">
+          <li class="ack-item">• Jose Vicente Arizmendi</li>
+        </ul>
+      </div>
+
+       <div class="ack-section">
+        <h2 class="ack-title"><a href="https://ciencias.javeriana.edu.co/departamento-de-fisica" target="_blank" class="ack-link" data-i18n="ack.physics">Departamento de Física PUJ</a></h2>
+        <ul class="ack-list">
+          <li class="ack-item">• Jacqueline ... - <span data-i18n="ack.role.secretary">Secretaria Departamento de Física PUJ</span></li>
+          <li class="ack-item">• William Castro</li>
+          <li class="ack-item">• Henry Mendez - <span data-i18n="ack.role.director">Director Dep. Física PUJ</span></li>
+        </ul>
+      </div>
+
     </section>
   </main>
 
@@ -106,7 +130,12 @@
         'nav.location': 'Lugar',
         'nav.committee': 'Organizadores',
         'nav.contact': 'Contacto',
+        'nav.media': 'Medios Visuales',
         'nav.agradecimientos': 'Agradecimientos',
+        'ack.title': 'Agradecimientos',
+        'ack.physics': 'Departamento de Física PUJ',
+        'ack.role.secretary': 'Secretaria Departamento de Física PUJ',
+        'ack.role.director': 'Director Dep. Física PUJ',
         'footer.developed': 'Desarrollado por el Comité de Organización',
         'footer.copyright': '© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas'
       },
@@ -119,7 +148,12 @@
         'nav.location': 'Location',
         'nav.committee': 'Organizers',
         'nav.contact': 'Contact',
+        'nav.media': 'Visual Media',
         'nav.agradecimientos': 'Acknowledgments',
+        'ack.title': 'Acknowledgments',
+        'ack.physics': 'Physics Department PUJ',
+        'ack.role.secretary': 'Secretary Physics Department PUJ',
+        'ack.role.director': 'Director Physics Dept. PUJ',
         'footer.developed': 'Developed by the Organizing Committee',
         'footer.copyright': '© 2025 Quantum Physics Symposium — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas'
       }
